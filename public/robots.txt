@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://school.amoxtli.tech
+
+# Sitemaps
+Sitemap: https://school.amoxtli.tech/sitemap.xml
