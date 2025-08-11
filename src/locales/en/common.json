@@ -1,0 +1,328 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "workflow": "Process",
+    "industries": "Industries",
+    "cases": "Cases",
+    "faqs": "FAQs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Training and consulting in {{highlight}} to transform your processes",
+    "highlight": "technology + AI",
+    "subtitle": "Responsible adoption, automation and analytics to optimize workflows and teams.",
+    "description": "Accelerate your organization's digital transformation with proven methodologies and focus on measurable results.",
+    "cta": "Request information"
+  },
+  "about": {
+    "title": "Accelerate {{highlight}} adoption in your organization",
+    "highlight": "technology and AI",
+    "subtitle": "Diagnosis, training, prototypes and guided deployment to transform processes safely and efficiently.",
+    "cards": {
+      "training": {
+        "title": "Practical training",
+        "description": "Hands-on programs designed for real teams with specific use cases from your industry."
+      },
+      "consulting": {
+        "title": "Applied consulting",
+        "description": "Deep diagnosis and personalized roadmap to implement technology strategically."
+      },
+      "adoption": {
+        "title": "Safe adoption",
+        "description": "Governance, ethics and compliance framework for responsible AI implementations."
+      }
+    }
+  },
+  "services": {
+    "title": "Our {{highlight}}",
+    "highlight": "training programs",
+    "subtitle": "Specialized courses and practical workshops to master technology and AI in your organization",
+    "cards": {
+      "ai-fundamentals": {
+        "title": "AI Fundamentals for Business",
+        "description": "Intensive course on key AI concepts, business use cases and implementation strategies.",
+        "results": [
+          "80% improvement in AI understanding",
+          "Identification of 5+ use cases",
+          "Personalized roadmap"
+        ]
+      },
+      "prompt-engineering": {
+        "title": "Prompt Engineering Workshop",
+        "description": "Master the art of creating effective prompts for ChatGPT, Claude and other generative AI tools.",
+        "results": [
+          "90% improvement in effective prompts",
+          "50+ advanced techniques",
+          "Real practical cases"
+        ]
+      },
+      "automation-workshop": {
+        "title": "No-Code Automation",
+        "description": "Learn to automate processes using no-code tools like Zapier, Make and Power Automate.",
+        "results": [
+          "5+ automations implemented",
+          "Practical tools",
+          "Immediate time savings"
+        ]
+      },
+      "data-analytics": {
+        "title": "Data Analytics for Teams",
+        "description": "Practical course on data analysis, visualization and data-driven decision making.",
+        "results": [
+          "Functional dashboards",
+          "Key metrics identified",
+          "Data-driven culture"
+        ]
+      },
+      "ai-governance": {
+        "title": "AI Governance and Ethics",
+        "description": "Workshop on responsible AI use, internal policies and regulatory compliance.",
+        "results": [
+          "AI policies implemented",
+          "100% ethical compliance",
+          "Risk framework"
+        ]
+      },
+      "digital-transformation": {
+        "title": "Digital Transformation Leadership",
+        "description": "Executive program for leaders on digital strategy, organizational change and technology adoption.",
+        "results": [
+          "Clear digital strategy",
+          "Cultural change plan",
+          "Transformation metrics"
+        ]
+      }
+    }
+  },
+  "industries": {
+    "title": "{{highlight}} we transform",
+    "highlight": "Industries",
+    "subtitle": "We adapt our training programs to the specific needs of your sector",
+    "list": [
+      "Education",
+      "Retail",
+      "Healthcare",
+      "Finance",
+      "Manufacturing",
+      "Logistics",
+      "Legal",
+      "Services"
+    ]
+  },
+  "workflow": {
+    "title": "Our training {{highlight}}",
+    "highlight": "process",
+    "subtitle": "Proven 5-stage educational methodology to guarantee effective learning",
+    "steps": [
+      {
+        "title": "Needs Assessment",
+        "description": "Analysis of current skills, gap identification and definition of learning objectives."
+      },
+      {
+        "title": "Curriculum Design",
+        "description": "Personalized program with content, practical activities, timelines and success metrics."
+      },
+      {
+        "title": "Immersive Training",
+        "description": "Hands-on workshops, real industry cases and practical exercises with current tools."
+      },
+      {
+        "title": "Practical Application",
+        "description": "Real projects in the work environment with continuous mentoring and personalized feedback."
+      },
+      {
+        "title": "Follow-up and Certification",
+        "description": "Skills assessment, official certification and continuous development plan."
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Real {{highlight}} cases",
+    "highlight": "transformation",
+    "subtitle": "Examples of successful training implementations across different industries",
+    "cases": [
+      {
+        "industry": "Education",
+        "before": "Teachers without AI knowledge",
+        "after": "Teaching team creating content with AI",
+        "impact": "70% reduction in class preparation time"
+      },
+      {
+        "industry": "Retail",
+        "before": "Manual and slow customer service",
+        "after": "Team trained in chatbots and automation",
+        "impact": "85% queries resolved automatically"
+      },
+      {
+        "industry": "Finance",
+        "before": "Manual and delayed data analysis",
+        "after": "Analysts certified in AI and automation",
+        "impact": "95% error reduction and 80% time savings"
+      },
+      {
+        "industry": "Healthcare",
+        "before": "Staff without digital training",
+        "after": "Medical team using AI for diagnosis",
+        "impact": "60% improvement in administrative efficiency"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "{{highlight}} of training with us",
+    "highlight": "Benefits",
+    "subtitle": "Measurable learning outcomes that directly impact your professional development",
+    "description": "Our pedagogical approach guarantees effective competency acquisition with immediate application.",
+    "list": [
+      {
+        "title": "Accelerated and practical learning",
+        "description": "Hands-on methodology with real cases that significantly accelerates the learning curve.",
+        "metric": "70% faster than traditional training"
+      },
+      {
+        "title": "Immediately applicable competencies",
+        "description": "Skills you can use from day one in your work with real tools.",
+        "metric": "95% immediate workplace application"
+      },
+      {
+        "title": "Recognized certifications",
+        "description": "Official credentials that validate your new competencies to employers and clients.",
+        "metric": "100% business recognition"
+      },
+      {
+        "title": "Personalized mentoring",
+        "description": "Individual support from experts to resolve doubts and accelerate your progress.",
+        "metric": "24/7 availability for queries"
+      },
+      {
+        "title": "Expanded professional network",
+        "description": "Connection with industry professionals and access to exclusive alumni community.",
+        "metric": "500+ professionals in the network"
+      },
+      {
+        "title": "Continuous updates",
+        "description": "Lifetime access to new content and program updates at no additional cost.",
+        "metric": "Content updated monthly"
+      }
+    ]
+  },
+  "caseStudies": {
+    "title": "{{highlight}} stories",
+    "highlight": "Success",
+    "subtitle": "Real cases of professionals transformed with our programs",
+    "cases": [
+      {
+        "title": "Marketing Manager masters generative AI",
+        "challenge": "Marketing team slow in content creation and no AI knowledge",
+        "solution": "Intensive program in AI applied to marketing and content automation",
+        "impact": "300% increase in productivity, 50% reduction in content costs"
+      },
+      {
+        "title": "Academic Director leads digital transformation",
+        "challenge": "Educational institution without digital strategy and resistance to technological change",
+        "solution": "Training in digital leadership and technology adoption program",
+        "impact": "90% teacher adoption, 40% improvement in student satisfaction"
+      },
+      {
+        "title": "Financial Analyst gets AI certified",
+        "challenge": "Manual analysis processes and lack of automation tools",
+        "solution": "Advanced analytics and financial automation course with AI",
+        "impact": "80% reduction in report time, 95% accuracy in forecasts"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently asked {{highlight}}",
+    "highlight": "questions",
+    "subtitle": "Answers to the most common questions about our training programs",
+    "questions": [
+      {
+        "question": "How long do the training programs last?",
+        "answer": "It varies by program: intensive workshops of 1-2 days, courses of 4-8 weeks, and executive programs of 3-6 months with flexible modalities."
+      },
+      {
+        "question": "Do I need prior knowledge in technology?",
+        "answer": "No, we design programs for all levels. From fundamentals for beginners to advanced specializations for experts."
+      },
+      {
+        "question": "Are the courses in-person or online?",
+        "answer": "We offer hybrid modalities: live virtual sessions, in-person workshops and on-demand content for maximum flexibility."
+      },
+      {
+        "question": "Do they include official certification?",
+        "answer": "Yes, all our programs include verifiable digital certification recognized by the industry upon successful completion."
+      },
+      {
+        "question": "Is there follow-up after the course?",
+        "answer": "We include 3 months of post-training mentoring, access to Alumni community and lifetime content updates."
+      },
+      {
+        "question": "Do you offer customized training for companies?",
+        "answer": "Yes, we design in-company programs adapted to specific needs, organizational culture and business objectives."
+      }
+    ]
+  },
+  "finalCTA": {
+    "title": "Ready to transform your professional career?",
+    "subtitle": "Start your learning journey in technology and AI today",
+    "description": "Schedule a free information session and discover how our programs can accelerate your professional development.",
+    "cta": "Request information session",
+    "note": "Available at school.amoxtli.tech"
+  },
+  "contact": {
+    "title": "Get in {{highlight}}",
+    "highlight": "touch",
+    "subtitle": "Tell us about your learning objectives and we'll design a custom program",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "company": "Company",
+      "industry": "Industry",
+      "companySize": "Company size",
+      "message": "Tell us about your training objectives",
+      "submit": "Submit request",
+      "submitting": "Submitting...",
+      "success": "Message sent! We'll contact you soon.",
+      "error": "Error sending. Please try again.",
+      "industries": {
+        "education": "Education",
+        "retail": "Retail",
+        "healthcare": "Healthcare",
+        "finance": "Finance",
+        "manufacturing": "Manufacturing",
+        "logistics": "Logistics",
+        "legal": "Legal",
+        "services": "Services",
+        "other": "Other"
+      },
+      "companySizes": {
+        "startup": "Startup (1-10)",
+        "small": "Small (11-50)",
+        "medium": "Medium (51-200)",
+        "large": "Large (201-1000)",
+        "enterprise": "Enterprise (1000+)"
+      }
+    }
+  },
+  "footer": {
+    "description": "Amoxtli School - Technology and AI training and consulting to transform organizations.",
+    "links": {
+      "services": "Programs",
+      "industries": "Industries",
+      "cases": "Success cases",
+      "contact": "Contact"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "contact": "school@amoxtli.tech",
+    "copyright": "© 2024 Amoxtli School. All rights reserved."
+  }
+}

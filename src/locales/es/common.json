@@ -1,0 +1,328 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "workflow": "Proceso",
+    "industries": "Industrias",
+    "cases": "Casos",
+    "faqs": "FAQs",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Capacitación y consultoría en {{highlight}} para transformar tus procesos",
+    "highlight": "tecnología + IA",
+    "subtitle": "Adopción responsable, automatización y analítica para optimizar flujos y equipos.",
+    "description": "Acelera la transformación digital de tu organización con metodologías probadas y enfoque en resultados medibles.",
+    "cta": "Solicitar información"
+  },
+  "about": {
+    "title": "Acelera la adopción de {{highlight}} en tu organización",
+    "highlight": "tecnología e IA",
+    "subtitle": "Diagnóstico, capacitación, prototipos y despliegue guiado para transformar procesos de manera segura y eficiente.",
+    "cards": {
+      "training": {
+        "title": "Capacitación práctica",
+        "description": "Programas hands-on diseñados para equipos reales con casos de uso específicos de tu industria."
+      },
+      "consulting": {
+        "title": "Consultoría aplicada",
+        "description": "Diagnóstico profundo y roadmap personalizado para implementar tecnología de forma estratégica."
+      },
+      "adoption": {
+        "title": "Adopción segura",
+        "description": "Marco de gobernanza, ética y cumplimiento para implementaciones responsables de IA."
+      }
+    }
+  },
+  "services": {
+    "title": "Nuestros {{highlight}}",
+    "highlight": "programas de capacitación",
+    "subtitle": "Cursos especializados y talleres prácticos para dominar tecnología e IA en tu organización",
+    "cards": {
+      "ai-fundamentals": {
+        "title": "Fundamentos de IA para Empresas",
+        "description": "Curso intensivo sobre conceptos clave de IA, casos de uso empresariales y estrategias de implementación.",
+        "results": [
+          "80% mejora comprensión IA",
+          "Identificación de 5+ casos de uso",
+          "Roadmap personalizado"
+        ]
+      },
+      "prompt-engineering": {
+        "title": "Taller de Prompt Engineering",
+        "description": "Domina el arte de crear prompts efectivos para ChatGPT, Claude y otras herramientas de IA generativa.",
+        "results": [
+          "90% mejora en prompts efectivos",
+          "50+ técnicas avanzadas",
+          "Casos prácticos reales"
+        ]
+      },
+      "automation-workshop": {
+        "title": "Automatización Sin Código",
+        "description": "Aprende a automatizar procesos usando herramientas no-code como Zapier, Make y Power Automate.",
+        "results": [
+          "5+ automatizaciones implementadas",
+          "Herramientas prácticas",
+          "Ahorro inmediato de tiempo"
+        ]
+      },
+      "data-analytics": {
+        "title": "Analítica de Datos para Equipos",
+        "description": "Curso práctico de análisis de datos, visualización y toma de decisiones basada en datos.",
+        "results": [
+          "Dashboards funcionales",
+          "Métricas clave identificadas",
+          "Cultura data-driven"
+        ]
+      },
+      "ai-governance": {
+        "title": "Gobernanza y Ética de IA",
+        "description": "Taller sobre uso responsable de IA, políticas internas y cumplimiento regulatorio.",
+        "results": [
+          "Políticas de IA implementadas",
+          "100% cumplimiento ético",
+          "Framework de riesgos"
+        ]
+      },
+      "digital-transformation": {
+        "title": "Liderazgo en Transformación Digital",
+        "description": "Programa ejecutivo para líderes sobre estrategia digital, cambio organizacional y adopción tecnológica.",
+        "results": [
+          "Estrategia digital clara",
+          "Plan de cambio cultural",
+          "Métricas de transformación"
+        ]
+      }
+    }
+  },
+  "industries": {
+    "title": "{{highlight}} que transformamos",
+    "highlight": "Industrias",
+    "subtitle": "Adaptamos nuestros programas de capacitación a las necesidades específicas de tu sector",
+    "list": [
+      "Educación",
+      "Retail",
+      "Salud",
+      "Finanzas",
+      "Manufactura",
+      "Logística",
+      "Legal",
+      "Servicios"
+    ]
+  },
+  "workflow": {
+    "title": "Nuestro {{highlight}} de capacitación",
+    "highlight": "proceso",
+    "subtitle": "Metodología educativa probada en 5 etapas para garantizar el aprendizaje efectivo",
+    "steps": [
+      {
+        "title": "Evaluación de Necesidades",
+        "description": "Análisis de habilidades actuales, identificación de brechas y definición de objetivos de aprendizaje."
+      },
+      {
+        "title": "Diseño Curricular",
+        "description": "Programa personalizado con contenidos, actividades prácticas, timelines y métricas de éxito."
+      },
+      {
+        "title": "Capacitación Inmersiva",
+        "description": "Talleres hands-on, casos reales de la industria y ejercicios prácticos con herramientas actuales."
+      },
+      {
+        "title": "Aplicación Práctica",
+        "description": "Proyectos reales en el entorno de trabajo con mentoría continua y feedback personalizado."
+      },
+      {
+        "title": "Seguimiento y Certificación",
+        "description": "Evaluación de competencias, certificación oficial y plan de desarrollo continuo."
+      }
+    ]
+  },
+  "useCases": {
+    "title": "{{highlight}} de transformación",
+    "highlight": "Casos reales",
+    "subtitle": "Ejemplos de capacitaciones exitosas en diferentes industrias",
+    "cases": [
+      {
+        "industry": "Educación",
+        "before": "Profesores sin conocimiento de IA",
+        "after": "Equipo docente creando contenido con IA",
+        "impact": "70% reducción tiempo preparación clases"
+      },
+      {
+        "industry": "Retail",
+        "before": "Atención al cliente manual y lenta",
+        "after": "Equipo capacitado en chatbots y automatización",
+        "impact": "85% consultas resueltas automáticamente"
+      },
+      {
+        "industry": "Finanzas",
+        "before": "Análisis de datos manual y tardío",
+        "after": "Analistas certificados en IA y automatización",
+        "impact": "95% reducción errores y 80% ahorro tiempo"
+      },
+      {
+        "industry": "Salud",
+        "before": "Personal sin formación digital",
+        "after": "Equipo médico usando IA para diagnóstico",
+        "impact": "60% mejora en eficiencia administrativa"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "{{highlight}} de capacitarte con nosotros",
+    "highlight": "Beneficios",
+    "subtitle": "Resultados de aprendizaje medibles que impactan directamente en tu desarrollo profesional",
+    "description": "Nuestro enfoque pedagógico garantiza adquisición efectiva de competencias con aplicación inmediata.",
+    "list": [
+      {
+        "title": "Aprendizaje acelerado y práctico",
+        "description": "Metodología hands-on con casos reales que acelera la curva de aprendizaje significativamente.",
+        "metric": "70% más rápido que capacitación tradicional"
+      },
+      {
+        "title": "Competencias inmediatamente aplicables",
+        "description": "Habilidades que puedes usar desde el primer día en tu trabajo con herramientas reales.",
+        "metric": "95% aplicación inmediata en el trabajo"
+      },
+      {
+        "title": "Certificaciones reconocidas",
+        "description": "Credenciales oficiales que validan tus nuevas competencias ante empleadores y clientes.",
+        "metric": "100% reconocimiento empresarial"
+      },
+      {
+        "title": "Mentorías personalizadas",
+        "description": "Acompañamiento individual de expertos para resolver dudas y acelerar tu progreso.",
+        "metric": "Disponibilidad 24/7 para consultas"
+      },
+      {
+        "title": "Red profesional ampliada",
+        "description": "Conexión con profesionales de tu industria y acceso a comunidad exclusiva de alumni.",
+        "metric": "500+ profesionales en la red"
+      },
+      {
+        "title": "Actualización continua",
+        "description": "Acceso de por vida a nuevos contenidos y actualizaciones del programa sin costo adicional.",
+        "metric": "Contenido actualizado mensualmente"
+      }
+    ]
+  },
+  "caseStudies": {
+    "title": "{{highlight}} de éxito",
+    "highlight": "Historias",
+    "subtitle": "Casos reales de profesionales transformados con nuestros programas",
+    "cases": [
+      {
+        "title": "Gerente de Marketing domina IA generativa",
+        "challenge": "Equipo de marketing lento en creación de contenido y sin conocimiento de IA",
+        "solution": "Programa intensivo de IA aplicada al marketing y automatización de contenidos",
+        "impact": "300% aumento en productividad, 50% reducción en costos de contenido"
+      },
+      {
+        "title": "Directora Académica lidera transformación digital",
+        "challenge": "Institución educativa sin estrategia digital y resistencia al cambio tecnológico",
+        "solution": "Capacitación en liderazgo digital y programa de adopción tecnológica",
+        "impact": "90% adopción docente, 40% mejora en satisfacción estudiantil"
+      },
+      {
+        "title": "Analista Financiero se certifica en IA",
+        "challenge": "Procesos manuales de análisis y falta de herramientas de automatización",
+        "solution": "Curso de analítica avanzada y automatización financiera con IA",
+        "impact": "80% reducción tiempo reportes, 95% precisión en pronósticos"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "{{highlight}} frecuentes",
+    "highlight": "Preguntas",
+    "subtitle": "Respuestas a las dudas más comunes sobre nuestros programas de capacitación",
+    "questions": [
+      {
+        "question": "¿Cuánto tiempo duran los programas de capacitación?",
+        "answer": "Varía según el programa: talleres intensivos de 1-2 días, cursos de 4-8 semanas, y programas ejecutivos de 3-6 meses con modalidades flexibles."
+      },
+      {
+        "question": "¿Necesito conocimientos previos en tecnología?",
+        "answer": "No, diseñamos programas para todos los niveles. Desde fundamentos para principiantes hasta especializaciones avanzadas para expertos."
+      },
+      {
+        "question": "¿Los cursos son presenciales u online?",
+        "answer": "Ofrecemos modalidades híbridas: sesiones virtuales en vivo, talleres presenciales y contenido on-demand para máxima flexibilidad."
+      },
+      {
+        "question": "¿Incluyen certificación oficial?",
+        "answer": "Sí, todos nuestros programas incluyen certificación digital verificable y reconocida por la industria al completar exitosamente."
+      },
+      {
+        "question": "¿Hay seguimiento después del curso?",
+        "answer": "Incluimos 3 meses de mentoría post-capacitación, acceso a comunidad Alumni y actualizaciones de contenido de por vida."
+      },
+      {
+        "question": "¿Ofrecen capacitación personalizada para empresas?",
+        "answer": "Sí, diseñamos programas in-company adaptados a necesidades específicas, cultura organizacional y objetivos de negocio."
+      }
+    ]
+  },
+  "finalCTA": {
+    "title": "¿Listo para transformar tu carrera profesional?",
+    "subtitle": "Comienza tu journey de aprendizaje en tecnología e IA hoy mismo",
+    "description": "Agenda una sesión informativa gratuita y descubre cómo nuestros programas pueden acelerar tu desarrollo profesional.",
+    "cta": "Solicitar sesión informativa",
+    "note": "Disponible en school.amoxtli.tech"
+  },
+  "contact": {
+    "title": "{{highlight}} en contacto",
+    "highlight": "Ponte",
+    "subtitle": "Cuéntanos sobre tus objetivos de aprendizaje y diseñemos un programa a medida",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "industry": "Industria",
+      "companySize": "Tamaño de empresa",
+      "message": "Cuéntanos sobre tus objetivos de capacitación",
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando...",
+      "success": "¡Mensaje enviado! Te contactaremos pronto.",
+      "error": "Error al enviar. Por favor intenta de nuevo.",
+      "industries": {
+        "education": "Educación",
+        "retail": "Retail",
+        "healthcare": "Salud",
+        "finance": "Finanzas",
+        "manufacturing": "Manufactura",
+        "logistics": "Logística",
+        "legal": "Legal",
+        "services": "Servicios",
+        "other": "Otro"
+      },
+      "companySizes": {
+        "startup": "Startup (1-10)",
+        "small": "Pequeña (11-50)",
+        "medium": "Mediana (51-200)",
+        "large": "Grande (201-1000)",
+        "enterprise": "Empresa (1000+)"
+      }
+    }
+  },
+  "footer": {
+    "description": "Amoxtli School - Capacitación y consultoría en tecnología e IA para transformar organizaciones.",
+    "links": {
+      "services": "Programas",
+      "industries": "Industrias", 
+      "cases": "Casos de éxito",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "privacy": "Aviso de Privacidad",
+      "terms": "Términos de Servicio"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "contact": "school@amoxtli.tech",
+    "copyright": "© 2024 Amoxtli School. Todos los derechos reservados."
+  }
+}
