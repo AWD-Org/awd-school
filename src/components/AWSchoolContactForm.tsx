@@ -99,12 +99,13 @@ const AWSchoolContactForm: React.FC = () => {
       component="form"
       onSubmit={handleSubmit(onSubmit)}
       sx={{
-        maxWidth: 600,
-        mx: "auto",
-        p: { xs: 3, sm: 4, md: 5 },
+        maxWidth: { xs: "100%", sm: 550, md: 600 },
+        mx: { xs: 1, sm: "auto" },
+        p: { xs: 2, sm: 3, md: 4 },
         backgroundColor: "#FFFFFF",
-        borderRadius: "24px",
+        borderRadius: { xs: "16px", sm: "20px", md: "24px" },
         boxShadow: "0px 8px 32px rgba(0, 0, 0, 0.1)",
+        width: { xs: "calc(100% - 16px)", sm: "auto" },
       }}
     >
 
@@ -136,9 +137,11 @@ const AWSchoolContactForm: React.FC = () => {
         variant="body1"
         sx={{
           textAlign: "center",
-          mb: 4,
+          mb: { xs: 3, sm: 4 },
           color: "#666666",
           lineHeight: 1.6,
+          fontSize: { xs: "0.9rem", sm: "1rem" },
+          px: { xs: 1, sm: 0 },
         }}
       >
         {t("contact.subtitle")}
@@ -155,7 +158,7 @@ const AWSchoolContactForm: React.FC = () => {
         </Alert>
       )}
 
-      <Grid container spacing={3}>
+      <Grid container spacing={{ xs: 2, sm: 3 }}>
         {/* Name */}
         <Grid item xs={12} sm={6}>
           <Controller

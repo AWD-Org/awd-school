@@ -3,13 +3,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { 
-  Search, 
-  PenTool, 
-  GraduationCap, 
-  Layers, 
-  HeadphonesIcon 
-} from "lucide-react";
 import AWSchoolTitle from "../components/AWSchoolTitle";
 
 const Workflow = () => {
@@ -20,13 +13,6 @@ const Workflow = () => {
     description: string;
   }>;
 
-  const stepIcons = [
-    <Search key="search" size={32} color="#FA206F" />,
-    <PenTool key="design" size={32} color="#FA206F" />,
-    <GraduationCap key="school" size={32} color="#FA206F" />,
-    <Layers key="integration" size={32} color="#FA206F" />,
-    <HeadphonesIcon key="support" size={32} color="#FA206F" />,
-  ];
 
   return (
     <Box
@@ -81,8 +67,9 @@ const Workflow = () => {
                   display: "flex",
                   flexDirection: { xs: "column", md: index % 2 === 0 ? "row" : "row-reverse" },
                   alignItems: "center",
-                  mb: 6,
-                  gap: 4,
+                  mb: { xs: 4, md: 6 },
+                  gap: { xs: 3, md: 4 },
+                  px: { xs: 1, sm: 0 },
                 }}
               >
                 {/* Content */}
@@ -98,7 +85,7 @@ const Workflow = () => {
                       fontWeight: 600,
                       color: "#101010",
                       mb: 2,
-                      fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.7rem" },
+                      fontSize: { xs: "1.2rem", sm: "1.4rem", md: "1.6rem" },
                     }}
                   >
                     {step.title}
@@ -108,8 +95,8 @@ const Workflow = () => {
                     sx={{
                       color: "#666666",
                       lineHeight: 1.6,
-                      fontSize: { xs: "1rem", sm: "1.1rem" },
-                      maxWidth: "400px",
+                      fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
+                      maxWidth: { xs: "100%", sm: "90%", md: "400px" },
                       mx: { xs: "auto", md: index % 2 === 0 ? "0 0 0 auto" : "0" },
                     }}
                   >
@@ -117,66 +104,41 @@ const Workflow = () => {
                   </Typography>
                 </Box>
 
-                {/* Step Number and Icon */}
+                {/* Step Number Only */}
                 <Box
                   sx={{
                     display: "flex",
-                    flexDirection: "column",
                     alignItems: "center",
+                    justifyContent: "center",
                     position: "relative",
+                    minWidth: { xs: 80, md: 120 },
+                    py: { xs: 2, md: 0 },
                   }}
                 >
                   {/* Step Number */}
                   <Box
                     sx={{
-                      width: 40,
-                      height: 40,
+                      width: { xs: 60, md: 80 },
+                      height: { xs: 60, md: 80 },
                       borderRadius: "50%",
                       backgroundColor: "#FA206F",
-                      color: "#FBFBFB",
+                      color: "#FFFFFF",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       fontWeight: 700,
-                      fontSize: "1.2rem",
-                      mb: 2,
+                      fontSize: { xs: "1.4rem", md: "1.8rem" },
                       zIndex: 2,
+                      boxShadow: "0px 4px 12px rgba(250, 32, 111, 0.3)",
+                      transition: "all 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                        boxShadow: "0px 8px 24px rgba(250, 32, 111, 0.4)",
+                      },
                     }}
                   >
                     {index + 1}
                   </Box>
-
-                  {/* Icon - No background */}
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "all 0.3s ease-in-out",
-                      "&:hover": {
-                        transform: "scale(1.1)",
-                      },
-                    }}
-                  >
-                    {stepIcons[index]}
-                  </Box>
-
-                  {/* Connecting Line */}
-                  {index < steps.length - 1 && (
-                    <Box
-                      sx={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: 2,
-                        height: 120,
-                        backgroundColor: "#E0E0E0",
-                        zIndex: 1,
-                        display: { xs: "block", md: "none" },
-                      }}
-                    />
-                  )}
                 </Box>
 
                 {/* Empty space for desktop layout */}
@@ -189,10 +151,25 @@ const Workflow = () => {
                   sx={{
                     display: { xs: "none", md: "block" },
                     width: "100%",
-                    height: 2,
-                    backgroundColor: "#E0E0E0",
+                    height: 3,
+                    background: "linear-gradient(to right, #FA206F, #E0E0E0, #FA206F)",
+                    borderRadius: "2px",
                     mb: 6,
                     mx: "auto",
+                    opacity: 0.6,
+                    position: "relative",
+                    "&::before": {
+                      content: '""',
+                      position: "absolute",
+                      left: "50%",
+                      top: "50%",
+                      transform: "translate(-50%, -50%)",
+                      width: 8,
+                      height: 8,
+                      borderRadius: "50%",
+                      backgroundColor: "#FA206F",
+                      boxShadow: "0px 2px 8px rgba(250, 32, 111, 0.3)",
+                    },
                   }}
                 />
               )}

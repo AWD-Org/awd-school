@@ -66,16 +66,16 @@ const AWSchoolFooter: React.FC = () => {
       sx={{
         backgroundColor: "#FA206F",
         color: "#FBFBFB",
-        borderRadius: { xs: "20px", sm: "30px" },
-        p: { xs: 3, sm: 4, md: 6 },
-        mx: { xs: 2, sm: 4, md: 6, lg: 12 },
-        my: { xs: 3, sm: 4, md: 6 },
-        mt: { xs: 6, sm: 8, md: 10 },
+        borderRadius: { xs: "16px", sm: "24px", md: "30px" },
+        p: { xs: 2, sm: 3, md: 4, lg: 6 },
+        mx: { xs: 1, sm: 3, md: 4, lg: 8 },
+        my: { xs: 2, sm: 3, md: 4 },
+        mt: { xs: 4, sm: 6, md: 8 },
       }}
     >
-      <Grid container spacing={4}>
+      <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
         {/* Brand Section */}
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} sm={12} md={4}>
           <Typography
             variant="h5"
             sx={{
@@ -89,17 +89,23 @@ const AWSchoolFooter: React.FC = () => {
           <Typography
             variant="body1"
             sx={{
-              mb: 3,
+              mb: { xs: 2, sm: 3 },
               lineHeight: 1.6,
               opacity: 0.9,
-              fontSize: { xs: "0.9rem", sm: "1rem" },
+              fontSize: { xs: "0.85rem", sm: "0.95rem", md: "1rem" },
+              maxWidth: { xs: "100%", md: "90%" },
             }}
           >
             {t("footer.description")}
           </Typography>
           
           {/* Social Links */}
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <Box sx={{ 
+            display: "flex", 
+            gap: { xs: 1.5, sm: 2 },
+            justifyContent: { xs: "center", md: "flex-start" },
+            mt: { xs: 1, sm: 0 }
+          }}>
             {socialLinks.map((social) => (
               <Link
                 key={social.name}

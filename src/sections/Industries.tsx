@@ -72,10 +72,11 @@ const Industries = () => {
             sx={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 2,
+              gap: { xs: 1.5, sm: 2 },
               justifyContent: "center",
-              maxWidth: "900px",
+              maxWidth: { xs: "100%", sm: "90%", md: "900px" },
               mx: "auto",
+              px: { xs: 1, sm: 0 },
             }}
           >
             {industries.map((industry, index) => (
@@ -83,11 +84,12 @@ const Industries = () => {
                 <Chip
                   label={industry}
                   sx={{
-                    fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" },
+                    fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
                     fontWeight: 500,
-                    px: { xs: 2, sm: 3 },
-                    py: { xs: 1, sm: 1.5 },
+                    px: { xs: 1.5, sm: 2, md: 3 },
+                    py: { xs: 0.8, sm: 1, md: 1.2 },
                     height: "auto",
+                    minHeight: { xs: "36px", sm: "40px", md: "44px" },
                     backgroundColor: "#FFFFFF",
                     color: "#101010",
                     borderRadius: "30px",
@@ -95,7 +97,7 @@ const Industries = () => {
                     cursor: "default",
                     "&:hover": {
                       backgroundColor: "#FA206F",
-                      color: "#FBFBFB",
+                      color: "#101010",
                       borderColor: "#FA206F",
                       transform: "translateY(-4px)",
                       boxShadow: "0px 8px 24px rgba(250, 32, 111, 0.3)",

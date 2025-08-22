@@ -4,7 +4,7 @@ import { Box, Typography, Container } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AWSchoolButton from "../components/AWSchoolButton";
-import AWSchoolTitle from "../components/AWSchoolTitle";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { track } from "../utils/analytics";
 
 const textVariants = {
@@ -44,55 +44,16 @@ const Hero = () => {
   };
 
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        position: "relative",
-        background: "linear-gradient(135deg, #FBFBFB 0%, #F5F5F5 100%)",
-        pt: { xs: 10, sm: 12, md: 8 },
-        pb: { xs: 6, sm: 8, md: 10 },
-        width: "100%",
-      }}
-    >
-      {/* Background decoration */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: "20%",
-          right: "10%",
-          width: { xs: 200, sm: 300, md: 400 },
-          height: { xs: 200, sm: 300, md: 400 },
-          borderRadius: "50%",
-          background: "linear-gradient(45deg, #FA206F15, #FA206F05)",
-          filter: "blur(100px)",
-          zIndex: 0,
-        }}
-      />
-      
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "10%",
-          left: "5%",
-          width: { xs: 150, sm: 250, md: 350 },
-          height: { xs: 150, sm: 250, md: 350 },
-          borderRadius: "50%",
-          background: "linear-gradient(45deg, #FA206F10, #FA206F03)",
-          filter: "blur(80px)",
-          zIndex: 0,
-        }}
-      />
-
-      {/* Full width container */}
+    <BackgroundBeamsWithCollision className="min-h-screen flex items-center relative overflow-hidden">
       <Box
         sx={{
           width: "100%",
           maxWidth: "100%",
           position: "relative",
-          zIndex: 1,
-          px: { xs: 3, sm: 4, md: 6, lg: 8, xl: 12 }, // Responsive padding
+          zIndex: 20,
+          pt: { xs: 10, sm: 12, md: 8 },
+          pb: { xs: 6, sm: 8, md: 10 },
+          px: { xs: 2, sm: 4, md: 6, lg: 8, xl: 10 },
         }}
       >
         <motion.div
@@ -104,36 +65,40 @@ const Hero = () => {
             sx={{
               textAlign: "center",
               width: "100%",
-              maxWidth: "none", // Remove max width constraint
+              maxWidth: "none",
             }}
           >
             {/* Main Title */}
             <motion.div variants={textVariants}>
-                <Typography
+              <Typography
                 variant="h1"
                 sx={{
                   fontWeight: 400,
-                  lineHeight: 1.1,
-                  fontSize: { 
-                  xs: "2rem", 
-                  sm: "2.8rem", 
-                  md: "3.5rem", 
-                  lg: "4.2rem",
-                  xl: "5rem" 
+                  lineHeight: { xs: 1.2, sm: 1.1 },
+                  fontSize: {
+                    xs: "1.75rem",
+                    sm: "2.5rem",
+                    md: "3.2rem",
+                    lg: "3.8rem",
+                    xl: "4.5rem"
                   },
                   color: "#333333",
-                  mb: 3,
+                  mb: { xs: 2, sm: 3 },
                   width: "100%",
+                  px: { xs: 1, sm: 0 }, // Add side padding on mobile
+                  textAlign: "center",
                   "& strong": {
-                  fontWeight: 700,
-                  color: "#FA206F",
+                    fontWeight: 700,
+                    color: "#FA206F",
+                    display: "inline-block",
+                    wordBreak: "break-word",
                   }
                 }}
-                >
-                {t("hero.title", { highlight: "" }).replace("{{highlight}}", "")}
-                <strong> {t("hero.highlight")} </strong>
-                para transformar tus procesos
-                </Typography>
+              >
+                {t("hero.title").split("{{highlight}}")[0]}
+                <strong>{t("hero.highlight")}</strong>
+                {t("hero.title").split("{{highlight}}")[1]}
+              </Typography>
             </motion.div>
 
             {/* Subtitle */}
@@ -141,13 +106,15 @@ const Hero = () => {
               <Typography
                 variant="h5"
                 sx={{
-                  fontSize: { xs: "1.1rem", sm: "1.4rem", md: "1.7rem", lg: "1.9rem" },
+                  fontSize: { xs: "1rem", sm: "1.3rem", md: "1.6rem", lg: "1.8rem" },
                   fontWeight: 400,
-                  mb: 3,
+                  mb: { xs: 2, sm: 3 },
                   lineHeight: 1.5,
-                  maxWidth: "1000px",
+                  maxWidth: { xs: "100%", sm: "90%", md: "800px" },
                   mx: "auto",
+                  px: { xs: 1, sm: 0 }, // Add side padding on mobile
                   color: "#666666",
+                  textAlign: "center",
                 }}
               >
                 {t("hero.subtitle")}
@@ -155,7 +122,7 @@ const Hero = () => {
             </motion.div>
 
             {/* CTA Button */}
-            <motion.div 
+            <motion.div
               variants={textVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -175,7 +142,7 @@ const Hero = () => {
           </Box>
         </motion.div>
       </Box>
-    </Box>
+    </BackgroundBeamsWithCollision>
   );
 };
 

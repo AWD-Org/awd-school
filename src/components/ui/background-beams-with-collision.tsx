@@ -1,0 +1,1 @@
+export { BackgroundBeamsWithCollision } from "./shadcn-io/background-beams-with-collision";

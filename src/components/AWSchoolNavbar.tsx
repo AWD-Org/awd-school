@@ -83,7 +83,8 @@ const AWSchoolNavbar: React.FC = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            px: { xs: 2, sm: 4, md: 6, lg: 10 },
+            px: { xs: 1, sm: 3, md: 4, lg: 6 },
+            minHeight: { xs: 64, sm: 70 },
           }}
         >
           {/* Logo Section */}
@@ -96,8 +97,14 @@ const AWSchoolNavbar: React.FC = () => {
             <Image
               src={AwdSchoolLogo}
               alt="Amoxtli School Logo"
-              width={75}
-              height={75}
+              width={80}
+              height={80}
+              style={{
+                width: "auto",
+                height: "auto",
+                maxWidth: "80px",
+                maxHeight: "80px",
+              }}
             />
           </Box>
 
@@ -116,7 +123,7 @@ const AWSchoolNavbar: React.FC = () => {
                 onClick={() => handleNavClick(item.path, item.label)}
                 sx={{
                   color: fontColor,
-                  fontSize: "0.9rem",
+                  fontSize: { xs: "0.85rem", sm: "0.9rem", md: "0.95rem" },
                   fontWeight: 600,
                   textTransform: "none",
                   cursor: "pointer",
@@ -124,6 +131,7 @@ const AWSchoolNavbar: React.FC = () => {
                   background: "none",
                   border: "none",
                   transition: "all 0.3s ease-in-out",
+                  whiteSpace: "nowrap",
                   "&:hover": {
                     color: "#FA206F",
                     transform: "translateY(-1px)",

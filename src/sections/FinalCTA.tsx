@@ -30,12 +30,13 @@ const FinalCTA = () => {
         sx={{
           position: "absolute",
           top: "-50%",
-          right: "-20%",
-          width: "600px",
-          height: "600px",
+          right: "-30%",
+          width: { xs: "300px", sm: "400px", md: "600px" },
+          height: { xs: "300px", sm: "400px", md: "600px" },
           borderRadius: "50%",
           background: "rgba(255, 255, 255, 0.1)",
           filter: "blur(100px)",
+          display: { xs: "none", sm: "block" }, // Hide on mobile to prevent overflow
         }}
       />
       
@@ -43,12 +44,13 @@ const FinalCTA = () => {
         sx={{
           position: "absolute",
           bottom: "-30%",
-          left: "-10%",
-          width: "400px",
-          height: "400px",
+          left: "-20%",
+          width: { xs: "200px", sm: "300px", md: "400px" },
+          height: { xs: "200px", sm: "300px", md: "400px" },
           borderRadius: "50%",
           background: "rgba(255, 255, 255, 0.05)",
           filter: "blur(80px)",
+          display: { xs: "none", sm: "block" }, // Hide on mobile to prevent overflow
         }}
       />
 

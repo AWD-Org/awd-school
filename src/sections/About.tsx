@@ -72,10 +72,12 @@ const About = () => {
             display: "grid",
             gridTemplateColumns: { 
               xs: "1fr", 
+              sm: "1fr", 
               md: "repeat(3, 1fr)" 
             },
-            gap: 4,
+            gap: { xs: 3, sm: 4 },
             alignItems: "stretch", // Hacer que todas las cards tengan la misma altura
+            px: { xs: 1, sm: 0 },
           }}
         >
           {cards.map((card, index) => (
