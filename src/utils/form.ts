@@ -117,10 +117,37 @@ export const submitToSupabase = async (data: ContactFormData): Promise<{ success
   }
 };
 
+// SendGrid API submission
+export const submitToSendGrid = async (data: ContactFormData): Promise<{ success: boolean; message: string }> => {
+  try {
+    // Remove honeypot from data before submission
+    const { honeypot, ...cleanData } = data;
+    
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cleanData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      return { success: true, message: result.message || "Formulario enviado exitosamente" };
+    } else {
+      return { success: false, message: result.message || "Error al enviar el formulario" };
+    }
+  } catch (error) {
+    console.error("SendGrid submission error:", error);
+    return { success: false, message: "Error de conexión" };
+  }
+};
+
 // Main form submission function
 export const submitContactForm = async (
   data: ContactFormData,
-  provider: "netlify" | "supabase" = "netlify"
+  provider: "netlify" | "supabase" | "sendgrid" = "sendgrid"
 ): Promise<{ success: boolean; message: string }> => {
   // Validate form first
   const validation = validateForm(data);
@@ -134,8 +161,10 @@ export const submitContactForm = async (
   // Submit based on provider
   if (provider === "netlify") {
     return submitToNetlify(data);
-  } else {
+  } else if (provider === "supabase") {
     return submitToSupabase(data);
+  } else {
+    return submitToSendGrid(data);
   }
 };
 

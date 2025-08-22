@@ -121,7 +121,7 @@ const Hero = () => {
                   lg: "4.2rem",
                   xl: "5rem" 
                   },
-                  color: "#FA206F",
+                  color: "#333333",
                   mb: 3,
                   width: "100%",
                   "& strong": {
@@ -147,6 +147,7 @@ const Hero = () => {
                   lineHeight: 1.5,
                   maxWidth: "1000px",
                   mx: "auto",
+                  color: "#666666",
                 }}
               >
                 {t("hero.subtitle")}

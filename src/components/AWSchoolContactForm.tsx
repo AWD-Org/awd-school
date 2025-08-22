@@ -17,11 +17,12 @@ import { useForm, Controller } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Loader2 } from "lucide-react";
 import AWSchoolButton from "./AWSchoolButton";
+import AWSchoolTitle from "./AWSchoolTitle";
 import { submitContactForm, ContactFormData, industryOptions, companySizeOptions } from "../utils/form";
 import { track } from "../utils/analytics";
 
-// Form provider configuration - change to "supabase" if using Supabase
-const FORM_PROVIDER: "netlify" | "supabase" = "netlify";
+// Form provider configuration - using SendGrid for email delivery
+const FORM_PROVIDER: "netlify" | "supabase" | "sendgrid" = "sendgrid";
 
 const AWSchoolContactForm: React.FC = () => {
   const { t } = useTranslation();
@@ -105,17 +106,7 @@ const AWSchoolContactForm: React.FC = () => {
         borderRadius: "24px",
         boxShadow: "0px 8px 32px rgba(0, 0, 0, 0.1)",
       }}
-      // Netlify form attributes
-      {...(FORM_PROVIDER === "netlify" && {
-        "data-netlify": "true",
-        "data-netlify-honeypot": "bot-field",
-        name: "contact",
-      })}
     >
-      {/* Hidden fields for Netlify */}
-      {FORM_PROVIDER === "netlify" && (
-        <input type="hidden" name="form-name" value="contact" />
-      )}
 
       {/* Honeypot field - hidden from users */}
       <Controller
@@ -133,18 +124,13 @@ const AWSchoolContactForm: React.FC = () => {
         )}
       />
 
-      <Typography
+      <AWSchoolTitle
+        text={t("contact.title")}
+        highlight={[t("contact.highlight")]}
         variant="h4"
-        component="h2"
-        sx={{
-          textAlign: "center",
-          mb: 4,
-          color: "#101010",
-          fontWeight: 600,
-        }}
-      >
-        {t("contact.title")}
-      </Typography>
+        alignText="center"
+        color="#101010"
+      />
 
       <Typography
         variant="body1"

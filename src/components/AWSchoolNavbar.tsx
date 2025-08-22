@@ -8,7 +8,6 @@ import AWSchoolButton from "./AWSchoolButton";
 import { track } from "../utils/analytics";
 import Image from "next/image";
 import AwdSchoolLogo from "../assets/awd-school_Mesa de trabajo 1 copia 4.png";
-import AwdSchoolBlackLogo from "../assets/awd-school-black_Mesa de trabajo 1 copia 5.png";
 
 const AWSchoolNavbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -21,6 +20,7 @@ const AWSchoolNavbar: React.FC = () => {
     { label: t("nav.about"), path: "#about" },
     { label: t("nav.services"), path: "#services" },
     { label: t("nav.workflow"), path: "#workflow" },
+    { label: t("nav.benefits"), path: "#benefits" },
     // { label: t("nav.industries"), path: "#industries" },
     // { label: t("nav.cases"), path: "#cases" },
     // { label: t("nav.faqs"), path: "#faqs" },
@@ -36,8 +36,7 @@ const AWSchoolNavbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const fontColor = isScrolled ? "#FA206F" : "#101010";
-  const logoColor = isScrolled ? "#FA206F" : "#101010";
+  const fontColor = "#FA206F"; // Always use pink primary color
 
   const toggleLanguage = () => {
     const newLanguage = isSpanish ? "en" : "es";
@@ -48,7 +47,7 @@ const AWSchoolNavbar: React.FC = () => {
 
   const handleNavClick = (path: string, label: string) => {
     track("nav_click", { section: label });
-    
+
     if (path.startsWith("#")) {
       const element = document.querySelector(path);
       if (element) {
@@ -71,8 +70,8 @@ const AWSchoolNavbar: React.FC = () => {
       <AppBar
         position="fixed"
         sx={{
-          background: isScrolled 
-            ? "rgba(251, 251, 251, 0.95)" 
+          background: isScrolled
+            ? "rgba(251, 251, 251, 0.95)"
             : "rgba(251, 251, 251, 0.1)",
           boxShadow: isScrolled ? "0px 2px 8px rgba(0, 0, 0, 0.1)" : "none",
           transition: "all 0.3s ease-in-out",
@@ -88,14 +87,14 @@ const AWSchoolNavbar: React.FC = () => {
           }}
         >
           {/* Logo Section */}
-          <Box 
-            display="flex" 
+          <Box
+            display="flex"
             alignItems="center"
             onClick={() => handleNavClick("#home", "logo")}
             sx={{ cursor: "pointer" }}
           >
             <Image
-              src={isScrolled ? AwdSchoolLogo : AwdSchoolBlackLogo}
+              src={AwdSchoolLogo}
               alt="Amoxtli School Logo"
               width={75}
               height={75}
@@ -167,7 +166,7 @@ const AWSchoolNavbar: React.FC = () => {
                     backgroundColor: fontColor,
                   },
                   "& .MuiSwitch-track": {
-                    backgroundColor: isScrolled ? "#FA206F" : "#101010",
+                    backgroundColor: "#FA206F",
                     opacity: 0.3,
                   },
                 }}
@@ -216,6 +215,7 @@ const AWSchoolNavbar: React.FC = () => {
             width: { xs: "100%", sm: 320 },
             backgroundColor: "#FBFBFB",
             padding: 2,
+            borderLeft: "2px solid #FA206F",
           },
         }}
       >
@@ -227,12 +227,12 @@ const AWSchoolNavbar: React.FC = () => {
             mb: 3,
           }}
         >
-          <Typography variant="h6" sx={{ fontWeight: 700, color: "#101010" }}>
+          <Typography variant="h6" sx={{ fontWeight: 700, color: "#FA206F" }}>
             Amoxtli School
           </Typography>
           <IconButton
             onClick={() => setMobileMenuOpen(false)}
-            sx={{ color: "#101010", p: 1 }}
+            sx={{ color: "#FA206F", p: 1 }}
             aria-label="Close mobile menu"
           >
             <X size={24} />
@@ -262,7 +262,7 @@ const AWSchoolNavbar: React.FC = () => {
                 sx={{
                   "& .MuiListItemText-primary": {
                     fontWeight: 600,
-                    color: "#101010",
+                    color: "#FA206F",
                     transition: "color 0.3s ease-in-out",
                   },
                 }}

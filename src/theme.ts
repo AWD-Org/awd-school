@@ -78,7 +78,7 @@ const theme = createTheme({
       contrastText: "#FBFBFB",
     },
     secondary: {
-      main: "#101010",
+      main: "#FA206F",
       contrastText: "#FBFBFB",
     },
     background: {
@@ -86,8 +86,8 @@ const theme = createTheme({
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#101010",
-      secondary: "#666666",
+      primary: "#FA206F",
+      secondary: "#FA206F",
     },
   },
   components: {

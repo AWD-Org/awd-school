@@ -25,7 +25,7 @@ const AWSchoolCard: React.FC<AWSchoolCardProps> = ({
   icon,
   backgroundColor = "#FFFFFF",
   hoverBackgroundColor = "#FA206F",
-  textColor = "#101010",
+  textColor = "#FA206F",
   hoverTextColor = "#FBFBFB",
   borderRadius = "24px",
   elevation = 0,

@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import I18nProvider from "../components/I18nProvider";
 import ClientThemeProvider from "../components/ClientThemeProvider";
 import AWSchoolNavbar from "../components/AWSchoolNavbar";
 import AWSchoolFooter from "../components/AWSchoolFooter";
+import AWSchoolLoader from "../components/AWSchoolLoader";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Services from "../sections/Services";
@@ -18,10 +19,17 @@ import FinalCTA from "../sections/FinalCTA";
 import { initAnalytics, trackPageView } from "../utils/analytics";
 
 function MainContent() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     // Initialize analytics
     initAnalytics();
     trackPageView("home");
+
+    // Loader timer (3 seconds like awd-web)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
 
     // Smooth scroll observer for section tracking
     const observerOptions = {
@@ -42,14 +50,23 @@ function MainContent() {
       });
     }, observerOptions);
 
-    // Observe all sections
-    const sections = document.querySelectorAll("section[id]");
-    sections.forEach((section) => observer.observe(section));
+    // Observe all sections (only after loading)
+    if (!isLoading) {
+      const sections = document.querySelectorAll("section[id]");
+      sections.forEach((section) => observer.observe(section));
+    }
 
     return () => {
+      clearTimeout(timer);
+      const sections = document.querySelectorAll("section[id]");
       sections.forEach((section) => observer.unobserve(section));
     };
-  }, []);
+  }, [isLoading]);
+
+  // Show loader during loading phase
+  if (isLoading) {
+    return <AWSchoolLoader />;
+  }
 
   return (
     <main className="min-h-screen bg-brand-background">
