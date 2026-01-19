@@ -22,7 +22,6 @@ const AWSchoolNavbar: React.FC = () => {
       { label: t("nav.about"), path: "#about" },
       { label: t("nav.programs"), path: "#programs" },
       { label: t("nav.methodology"), path: "#methodology" },
-      { label: t("nav.benefits"), path: "#benefits" },
       { label: t("nav.stories"), path: "#stories" },
       { label: t("nav.contact"), path: "#contact" },
     ],
