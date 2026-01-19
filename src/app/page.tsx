@@ -19,20 +19,20 @@ function MainContent() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1200);
+    const timer = setTimeout(() => setIsLoading(false), 1200);
 
     // Initialize analytics
     initAnalytics();
     trackPageView("home");
 
-    // Loader timer (3 seconds like awd-web)
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
-    // Smooth scroll observer for section tracking
+  useEffect(() => {
+    if (isLoading) return;
+
     const observerOptions = {
       threshold: 0.5,
       rootMargin: "-50px 0px",
@@ -43,7 +43,6 @@ function MainContent() {
         if (entry.isIntersecting) {
           const sectionId = entry.target.id;
           if (sectionId) {
-            // Update URL hash without scrolling
             const newUrl = `${window.location.pathname}#${sectionId}`;
             window.history.replaceState({}, "", newUrl);
           }
@@ -51,23 +50,15 @@ function MainContent() {
       });
     }, observerOptions);
 
-    // Observe all sections (only after loading)
-    if (!isLoading) {
-      const sections = document.querySelectorAll("section[id]");
-      sections.forEach((section) => observer.observe(section));
-    }
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => observer.observe(section));
 
     return () => {
-      clearTimeout(timer);
       sections.forEach((section) => observer.unobserve(section));
     };
   }, [isLoading]);
 
   // Show loader during loading phase
-  if (isLoading) {
-    return <AWSchoolLoader />;
-  }
-
   if (isLoading) {
     return <AWSchoolLoader />;
   }
