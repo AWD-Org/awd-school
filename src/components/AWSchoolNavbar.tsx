@@ -133,7 +133,7 @@ const AWSchoolNavbar: React.FC = () => {
 
   const handleNavClick = (path: string, label: string) => {
     track("nav_click", { section: label });
-    
+
     if (path.startsWith("#")) {
       const element = document.querySelector(path);
       if (element) {

@@ -27,6 +27,11 @@ function MainContent() {
     initAnalytics();
     trackPageView("home");
 
+    // Loader timer (3 seconds like awd-web)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
     // Smooth scroll observer for section tracking
     const observerOptions = {
       threshold: 0.5,
@@ -46,15 +51,22 @@ function MainContent() {
       });
     }, observerOptions);
 
-    // Observe all sections
-    const sections = document.querySelectorAll("section[id]");
-    sections.forEach((section) => observer.observe(section));
+    // Observe all sections (only after loading)
+    if (!isLoading) {
+      const sections = document.querySelectorAll("section[id]");
+      sections.forEach((section) => observer.observe(section));
+    }
 
     return () => {
       clearTimeout(timer);
       sections.forEach((section) => observer.unobserve(section));
     };
-  }, []);
+  }, [isLoading]);
+
+  // Show loader during loading phase
+  if (isLoading) {
+    return <AWSchoolLoader />;
+  }
 
   if (isLoading) {
     return <AWSchoolLoader />;
