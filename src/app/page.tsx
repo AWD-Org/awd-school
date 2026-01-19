@@ -1,24 +1,28 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import I18nProvider from "../components/I18nProvider";
-import ClientThemeProvider from "../components/ClientThemeProvider";
 import AWSchoolNavbar from "../components/AWSchoolNavbar";
 import AWSchoolFooter from "../components/AWSchoolFooter";
+import AWSchoolLoader from "../components/AWSchoolLoader";
+import CookieBanner from "../components/CookieBanner";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Services from "../sections/Services";
-import Industries from "../sections/Industries";
 import Workflow from "../sections/Workflow";
-import UseCases from "../sections/UseCases";
 import Benefits from "../sections/Benefits";
-import CaseStudies from "../sections/CaseStudies";
-import FAQs from "../sections/FAQs";
+import Testimonials from "../sections/Testimonials";
 import FinalCTA from "../sections/FinalCTA";
 import { initAnalytics, trackPageView } from "../utils/analytics";
 
 function MainContent() {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1200);
+
     // Initialize analytics
     initAnalytics();
     trackPageView("home");
@@ -47,68 +51,55 @@ function MainContent() {
     sections.forEach((section) => observer.observe(section));
 
     return () => {
+      clearTimeout(timer);
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
 
+  if (isLoading) {
+    return <AWSchoolLoader />;
+  }
+
   return (
-    <main className="min-h-screen bg-brand-background">
+    <main className="min-h-screen bg-paper text-ink">
       <AWSchoolNavbar />
       
-      {/* Main content with smooth scroll */}
-      <div className="scroll-smooth">
-        <section id="home">
+      {/* Main content */}
+      <div className="snap-container">
+        <div className="snap-section">
           <Hero />
-        </section>
-        
-        <section id="about">
+        </div>
+        <div className="snap-section snap-center-section">
           <About />
-        </section>
-        
-        <section id="services">
+        </div>
+        <div className="snap-section snap-center-section">
           <Services />
-        </section>
-        
-        <section id="industries">
-          <Industries />
-        </section>
-        
-        <section id="workflow">
+        </div>
+        <div className="snap-section snap-center-section">
           <Workflow />
-        </section>
-        
-        {/* <section id="cases">
-          <UseCases />
-        </section> */}
-        
-        <section id="benefits">
+        </div>
+        <div className="snap-section snap-center-section">
           <Benefits />
-        </section>
-        
-        {/* <section id="case-studies">
-          <CaseStudies />
-        </section>
-        
-        <section id="faqs">
-          <FAQs />
-        </section> */}
-        
-        <section id="contact">
+        </div>
+        <div className="snap-section snap-center-section">
+          <Testimonials />
+        </div>
+        <div className="snap-section snap-center-section">
           <FinalCTA />
-        </section>
+        </div>
+        <div className="snap-section snap-center-section">
+          <AWSchoolFooter />
+        </div>
       </div>
-
-      <AWSchoolFooter />
+      <CookieBanner />
     </main>
   );
 }
 
 export default function HomePage() {
   return (
-    <ClientThemeProvider>
-      <I18nProvider>
-        <MainContent />
-      </I18nProvider>
-    </ClientThemeProvider>
+    <I18nProvider>
+      <MainContent />
+    </I18nProvider>
   );
 }

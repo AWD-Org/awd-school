@@ -1,190 +1,72 @@
 "use client";
 
-import { Box, Container, Typography } from "@mui/material";
+import { Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AWSchoolButton from "../components/AWSchoolButton";
-import AWSchoolContactForm from "../components/AWSchoolContactForm";
-import AWSchoolTitle from "../components/AWSchoolTitle";
+import FadeIn from "../components/FadeIn";
 import { track } from "../utils/analytics";
 
-const FinalCTA = () => {
+const FinalCTA: React.FC = () => {
   const { t } = useTranslation();
 
   const handleCTAClick = () => {
-    track("cta_click", { location: "final_cta" });
+    track("cta_click", { location: "final" });
   };
 
   return (
-    <Box
-      sx={{
-        py: { xs: 8, sm: 10, md: 12 },
-        background: "linear-gradient(135deg, #FA206F 0%, #E01D63 100%)",
-        color: "#FBFBFB",
-        position: "relative",
-        overflow: "hidden",
-      }}
+    <motion.section
+      id="contact"
+      className="bg-paper"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
     >
-      {/* Background decoration */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: "-50%",
-          right: "-20%",
-          width: "600px",
-          height: "600px",
-          borderRadius: "50%",
-          background: "rgba(255, 255, 255, 0.1)",
-          filter: "blur(100px)",
-        }}
-      />
-      
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "-30%",
-          left: "-10%",
-          width: "400px",
-          height: "400px",
-          borderRadius: "50%",
-          background: "rgba(255, 255, 255, 0.05)",
-          filter: "blur(80px)",
-        }}
-      />
+      <div className="mx-auto w-full max-w-6xl px-6 py-20">
+        <FadeIn>
+          <div className="rounded-[36px] border border-black/5 bg-paper p-6 md:p-12">
+            <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+              <div>
+                <h2 className="mt-4 text-2xl font-semibold leading-tight text-ink md:text-3xl">
+                  {t("finalCTA.title")}
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-ink/70">
+                  {t("finalCTA.subtitle")}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <AWSchoolButton onClick={handleCTAClick} variant="outline" size="lg">
+                    {t("hero.cta")}
+                  </AWSchoolButton>
+                  <AWSchoolButton href="mailto:school@amoxtli.tech" variant="solid" size="lg">
+                    {t("finalCTA.secondary")}
+                  </AWSchoolButton>
+                </div>
+              </div>
 
-      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-        {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
-          <Box sx={{ textAlign: "center", mb: 8 }}>
-            <Typography
-              variant="h2"
-              sx={{
-                fontWeight: 700,
-                fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                mb: 3,
-                lineHeight: 1.2,
-              }}
-            >
-              {t("finalCTA.title")}
-            </Typography>
-            
-            <Typography
-              variant="h5"
-              sx={{
-                fontSize: { xs: "1.2rem", sm: "1.4rem", md: "1.6rem" },
-                fontWeight: 400,
-                opacity: 0.95,
-                mb: 2,
-                lineHeight: 1.4,
-              }}
-            >
-              {t("finalCTA.subtitle")}
-            </Typography>
-            
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: { xs: "1rem", sm: "1.2rem" },
-                fontWeight: 300,
-                opacity: 0.9,
-                maxWidth: "600px",
-                mx: "auto",
-                lineHeight: 1.6,
-              }}
-            >
-              {t("finalCTA.description")}
-            </Typography>
-          </Box>
-        </motion.div>
-
-        {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <AWSchoolContactForm />
-        </motion.div>
-
-        {/* Additional CTA Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <Box sx={{ textAlign: "center", mt: 6 }}>
-            <Typography
-              variant="body1"
-              sx={{
-                fontSize: { xs: "0.9rem", sm: "1rem" },
-                opacity: 0.8,
-                mb: 4,
-              }}
-            >
-              {t("finalCTA.note")}
-            </Typography>
-
-            {/* Quick benefits */}
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", sm: "row" },
-                justifyContent: "center",
-                alignItems: "center",
-                gap: { xs: 2, sm: 4 },
-                mt: 4,
-              }}
-            >
-              {[
-                "Consultoría inicial gratuita",
-                "Propuesta en 48 horas",
-                "Sin compromiso"
-              ].map((benefit, index) => (
-                <Box
-                  key={index}
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    px: 3,
-                    py: 1.5,
-                    backgroundColor: "rgba(255, 255, 255, 0.15)",
-                    borderRadius: "25px",
-                    border: "1px solid rgba(255, 255, 255, 0.2)",
-                    backdropFilter: "blur(10px)",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: 6,
-                      height: 6,
-                      borderRadius: "50%",
-                      backgroundColor: "#FBFBFB",
-                    }}
-                  />
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontSize: { xs: "0.8rem", sm: "0.9rem" },
-                      fontWeight: 500,
-                    }}
-                  >
-                    {benefit}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
-          </Box>
-        </motion.div>
-      </Container>
-    </Box>
+              <div className="flex flex-col justify-between gap-6 rounded-3xl bg-paper p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(26,26,26,0.08)]">
+                <p className="text-xs text-ink/40">{t("finalCTA.card.title")}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink/70">
+                  {t("finalCTA.card.description")}
+                </p>
+                <div className="mt-6 space-y-4 text-sm text-ink/70">
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-4 w-4 text-brand-accent" />
+                    <a href="mailto:school@amoxtli.tech" className="font-medium text-ink">
+                      school@amoxtli.tech
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-4 w-4 text-brand-accent" />
+                    <span>{t("finalCTA.card.responseTime")}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </motion.section>
   );
 };
 

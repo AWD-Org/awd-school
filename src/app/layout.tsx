@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "../styles/globals.css";
 import { defaultSEO, organizationSchema, servicesSchema, generateStructuredData } from "../utils/seo";
 
-const quicksand = Quicksand({
-  variable: "--font-quicksand",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 // Export metadata for Next.js App Router
@@ -23,20 +24,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(defaultSEO.url || "https://school.amoxtli.tech"),
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/assets/favicon.png", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/assets/favicon.png", type: "image/png" },
     ],
   },
   alternates: {
     canonical: "/",
-    languages: {
-      "es-MX": "/",
-      "en-US": "/en",
-    },
   },
   openGraph: {
     type: "website",
@@ -92,7 +87,7 @@ export const viewport = {
   userScalable: true,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#FBFBFB" },
-    { media: "(prefers-color-scheme: dark)", color: "#101010" },
+    { media: "(prefers-color-scheme: dark)", color: "#1A1A1A" },
   ],
 };
 
@@ -101,6 +96,33 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Amoxtli School",
+    url: "https://school.amoxtli.tech",
+    inLanguage: "es-MX",
+    description: defaultSEO.description,
+    publisher: {
+      "@type": "Organization",
+      name: "Amoxtli School",
+    },
+  };
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: defaultSEO.title,
+    url: "https://school.amoxtli.tech/",
+    inLanguage: "es-MX",
+    description: defaultSEO.description,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Amoxtli School",
+      url: "https://school.amoxtli.tech",
+    },
+  };
+
   return (
     <html lang="es">
       <head>
@@ -138,11 +160,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={generateStructuredData(servicesSchema)}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={generateStructuredData(websiteSchema)}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={generateStructuredData(webPageSchema)}
+        />
 
         {/* Additional favicon links (primary ones handled by metadata) */}
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${quicksand.variable} antialiased`}>
+      <body className={`${spaceGrotesk.variable} antialiased`}>
         {children}
       </body>
     </html>

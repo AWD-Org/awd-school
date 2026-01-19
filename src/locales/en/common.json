@@ -2,327 +2,266 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
-    "workflow": "Process",
-    "industries": "Industries",
-    "cases": "Cases",
-    "faqs": "FAQs",
-    "contact": "Contact"
+    "programs": "Programs",
+    "methodology": "Methodology",
+    "benefits": "Benefits",
+    "stories": "Cases",
+    "contact": "Contact",
+    "openMenu": "Open menu"
   },
   "hero": {
-    "title": "Training and consulting in {{highlight}} to transform your processes",
-    "highlight": "technology + AI",
-    "subtitle": "Responsible adoption, automation and analytics to optimize workflows and teams.",
-    "description": "Accelerate your organization's digital transformation with proven methodologies and focus on measurable results.",
-    "cta": "Request information"
+    "eyebrow": "",
+    "title": "Make better technology decisions",
+    "highlight": "before investing.",
+    "subtitle": "Technology mentorship for businesses that want to optimize processes, implement technology, and integrate AI in a practical, strategic way.",
+    "cta": "Request information",
+    "secondary": "Explore programs",
+    "meta": {
+      "label": "Focus",
+      "value": "Technology, data, and responsible AI"
+    },
+    "meta2": {
+      "label": "Format",
+      "value": "In-company programs + consulting"
+    }
   },
   "about": {
-    "title": "Accelerate {{highlight}} adoption in your organization",
-    "highlight": "technology and AI",
-    "subtitle": "Diagnosis, training, prototypes and guided deployment to transform processes safely and efficiently.",
+    "eyebrow": "Amoxtli School",
+    "title": "Amoxtli School is technology and strategic mentorship for businesses.",
+    "subtitle": "We guide decisions to optimize real processes and use technology and AI with criteria, clarity, and operational focus.",
+    "imageEyebrow": "Real context",
+    "imageTitle": "Conscious decisions before investing.",
     "cards": {
       "training": {
-        "title": "Practical training",
-        "description": "Hands-on programs designed for real teams with specific use cases from your industry."
+        "title": "Key technology decisions",
+        "description": "We help decide what should be implemented and what should not, based on operations."
       },
       "consulting": {
-        "title": "Applied consulting",
-        "description": "Deep diagnosis and personalized roadmap to implement technology strategically."
+        "title": "Criteria before execution",
+        "description": "Clarity to prioritize investment, time, and effort with a practical focus."
       },
       "adoption": {
-        "title": "Safe adoption",
-        "description": "Governance, ethics and compliance framework for responsible AI implementations."
+        "title": "Conscious implementation",
+        "description": "Technology aligned with real processes, without empty promises."
+      },
+      "results": {
+        "title": "Expert guidance",
+        "description": "We translate technical decisions into business language and practical action."
       }
+    },
+    "metrics": {
+      "training": "Decision criteria",
+      "automation": "Process optimization",
+      "analytics": "Operational clarity",
+      "governance": "Conscious implementation",
+      "adoption": "AI with purpose",
+      "support": "Expert guidance"
     }
   },
   "services": {
-    "title": "Our {{highlight}}",
-    "highlight": "training programs",
-    "subtitle": "Specialized courses and practical workshops to master technology and AI in your organization",
+    "eyebrow": "Programs and services",
+    "title": "Our approach",
+    "subtitle": "Decide, design, and implement technology with purpose, structure, and operational focus.",
     "cards": {
-      "ai-fundamentals": {
-        "title": "AI Fundamentals for Business",
-        "description": "Intensive course on key AI concepts, business use cases and implementation strategies.",
-        "results": [
-          "80% improvement in AI understanding",
-          "Identification of 5+ use cases",
-          "Personalized roadmap"
-        ]
+      "ai-foundations": {
+        "title": "Criteria to integrate AI",
+        "description": "Define when, how, and why to use AI with real impact.",
+        "meta": "Clear decisions"
       },
-      "prompt-engineering": {
-        "title": "Prompt Engineering Workshop",
-        "description": "Master the art of creating effective prompts for ChatGPT, Claude and other generative AI tools.",
-        "results": [
-          "90% improvement in effective prompts",
-          "50+ advanced techniques",
-          "Real practical cases"
-        ]
+      "automation": {
+        "title": "Optimize real processes",
+        "description": "Identify friction points and choose technology that actually improves operations.",
+        "meta": "Practical impact"
       },
-      "automation-workshop": {
-        "title": "No-Code Automation",
-        "description": "Learn to automate processes using no-code tools like Zapier, Make and Power Automate.",
-        "results": [
-          "5+ automations implemented",
-          "Practical tools",
-          "Immediate time savings"
-        ]
+      "applied-analytics": {
+        "title": "Data-driven decisions",
+        "description": "Useful metrics to prioritize investment and action with clarity.",
+        "meta": "Operational criteria"
       },
-      "data-analytics": {
-        "title": "Data Analytics for Teams",
-        "description": "Practical course on data analysis, visualization and data-driven decision making.",
-        "results": [
-          "Functional dashboards",
-          "Key metrics identified",
-          "Data-driven culture"
-        ]
+      "responsible-ai": {
+        "title": "Conscious implementation",
+        "description": "Use AI and technology aligned with your reality, not trends.",
+        "meta": "Responsible use"
       },
-      "ai-governance": {
-        "title": "AI Governance and Ethics",
-        "description": "Workshop on responsible AI use, internal policies and regulatory compliance.",
-        "results": [
-          "AI policies implemented",
-          "100% ethical compliance",
-          "Risk framework"
-        ]
+      "product-labs": {
+        "title": "Define the right technology",
+        "description": "Identify what actually makes sense before investing.",
+        "meta": "Real priorities"
       },
-      "digital-transformation": {
-        "title": "Digital Transformation Leadership",
-        "description": "Executive program for leaders on digital strategy, organizational change and technology adoption.",
-        "results": [
-          "Clear digital strategy",
-          "Cultural change plan",
-          "Transformation metrics"
-        ]
+      "tech-strategy": {
+        "title": "Strategic guidance",
+        "description": "Clarity to decide without over‑relying on vendors.",
+        "meta": "Expert criteria"
       }
     }
   },
-  "industries": {
-    "title": "{{highlight}} we transform",
-    "highlight": "Industries",
-    "subtitle": "We adapt our training programs to the specific needs of your sector",
-    "list": [
-      "Education",
-      "Retail",
-      "Healthcare",
-      "Finance",
-      "Manufacturing",
-      "Logistics",
-      "Legal",
-      "Services"
-    ]
-  },
   "workflow": {
-    "title": "Our training {{highlight}}",
-    "highlight": "process",
-    "subtitle": "Proven 5-stage educational methodology to guarantee effective learning",
+    "eyebrow": "Methodology",
+    "title": "How we work with your team.",
+    "subtitle": "A clear process to decide, implement, and support technology with purpose.",
     "steps": [
       {
-        "title": "Needs Assessment",
-        "description": "Analysis of current skills, gap identification and definition of learning objectives."
+        "title": "Operational diagnosis",
+        "description": "We understand real processes and where technology can help."
       },
       {
-        "title": "Curriculum Design",
-        "description": "Personalized program with content, practical activities, timelines and success metrics."
+        "title": "Criteria and clarity",
+        "description": "Define what makes sense to implement and what does not."
       },
       {
-        "title": "Immersive Training",
-        "description": "Hands-on workshops, real industry cases and practical exercises with current tools."
+        "title": "Action plan",
+        "description": "Prioritize investment, timing, and feasible steps."
       },
       {
-        "title": "Practical Application",
-        "description": "Real projects in the work environment with continuous mentoring and personalized feedback."
+        "title": "Conscious implementation",
+        "description": "We guide the practical integration of technology and AI."
       },
       {
-        "title": "Follow-up and Certification",
-        "description": "Skills assessment, official certification and continuous development plan."
-      }
-    ]
-  },
-  "useCases": {
-    "title": "Real {{highlight}} cases",
-    "highlight": "transformation",
-    "subtitle": "Examples of successful training implementations across different industries",
-    "cases": [
-      {
-        "industry": "Education",
-        "before": "Teachers without AI knowledge",
-        "after": "Teaching team creating content with AI",
-        "impact": "70% reduction in class preparation time"
+        "title": "Continuous support",
+        "description": "Expert follow‑up to adjust and decide better."
       },
       {
-        "industry": "Retail",
-        "before": "Manual and slow customer service",
-        "after": "Team trained in chatbots and automation",
-        "impact": "85% queries resolved automatically"
-      },
-      {
-        "industry": "Finance",
-        "before": "Manual and delayed data analysis",
-        "after": "Analysts certified in AI and automation",
-        "impact": "95% error reduction and 80% time savings"
-      },
-      {
-        "industry": "Healthcare",
-        "before": "Staff without digital training",
-        "after": "Medical team using AI for diagnosis",
-        "impact": "60% improvement in administrative efficiency"
+        "title": "Expected outcomes",
+        "description": "Less uncertainty, better budget use, more efficient processes."
       }
     ]
   },
   "benefits": {
-    "title": "{{highlight}} of training with us",
-    "highlight": "Benefits",
-    "subtitle": "Measurable learning outcomes that directly impact your professional development",
-    "description": "Our pedagogical approach guarantees effective competency acquisition with immediate application.",
+    "eyebrow": "Outcomes",
+    "title": "Expected outcomes",
+    "subtitle": "What changes when you decide with criteria.",
     "list": [
       {
-        "title": "Accelerated and practical learning",
-        "description": "Hands-on methodology with real cases that significantly accelerates the learning curve.",
-        "metric": "70% faster than traditional training"
+        "title": "Less technology uncertainty",
+        "description": "Clear decisions before investing.",
+        "metric": "Real clarity"
       },
       {
-        "title": "Immediately applicable competencies",
-        "description": "Skills you can use from day one in your work with real tools.",
-        "metric": "95% immediate workplace application"
+        "title": "Better budget use",
+        "description": "Investment focused on what actually helps.",
+        "metric": "Conscious spend"
       },
       {
-        "title": "Recognized certifications",
-        "description": "Official credentials that validate your new competencies to employers and clients.",
-        "metric": "100% business recognition"
+        "title": "More efficient processes",
+        "description": "Optimize real workflows without automating the wrong ones.",
+        "metric": "Practical impact"
       },
       {
-        "title": "Personalized mentoring",
-        "description": "Individual support from experts to resolve doubts and accelerate your progress.",
-        "metric": "24/7 availability for queries"
-      },
-      {
-        "title": "Expanded professional network",
-        "description": "Connection with industry professionals and access to exclusive alumni community.",
-        "metric": "500+ professionals in the network"
-      },
-      {
-        "title": "Continuous updates",
-        "description": "Lifetime access to new content and program updates at no additional cost.",
-        "metric": "Content updated monthly"
+        "title": "Decision capability",
+        "description": "Less dependence on technical vendors.",
+        "metric": "Autonomy"
       }
     ]
   },
-  "caseStudies": {
-    "title": "{{highlight}} stories",
-    "highlight": "Success",
-    "subtitle": "Real cases of professionals transformed with our programs",
-    "cases": [
+  "testimonials": {
+    "eyebrow": "Real cases",
+    "title": "Real experiences",
+    "subtitle": "Outcomes from businesses that decided with clarity.",
+    "items": [
       {
-        "title": "Marketing Manager masters generative AI",
-        "challenge": "Marketing team slow in content creation and no AI knowledge",
-        "solution": "Intensive program in AI applied to marketing and content automation",
-        "impact": "300% increase in productivity, 50% reduction in content costs"
+        "quote": "We defined which technology made sense and avoided unnecessary tools.",
+        "name": "Operations Lead",
+        "role": "Regional retail"
       },
       {
-        "title": "Academic Director leads digital transformation",
-        "challenge": "Educational institution without digital strategy and resistance to technological change",
-        "solution": "Training in digital leadership and technology adoption program",
-        "impact": "90% teacher adoption, 40% improvement in student satisfaction"
+        "quote": "We gained clarity to prioritize processes and choose the right integration.",
+        "name": "Head of Data",
+        "role": "Financial services"
       },
       {
-        "title": "Financial Analyst gets AI certified",
-        "challenge": "Manual analysis processes and lack of automation tools",
-        "solution": "Advanced analytics and financial automation course with AI",
-        "impact": "80% reduction in report time, 95% accuracy in forecasts"
-      }
-    ]
-  },
-  "faqs": {
-    "title": "Frequently asked {{highlight}}",
-    "highlight": "questions",
-    "subtitle": "Answers to the most common questions about our training programs",
-    "questions": [
-      {
-        "question": "How long do the training programs last?",
-        "answer": "It varies by program: intensive workshops of 1-2 days, courses of 4-8 weeks, and executive programs of 3-6 months with flexible modalities."
+        "quote": "The guidance gave us criteria to decide without vendor dependence.",
+        "name": "Innovation Director",
+        "role": "Healthcare"
       },
       {
-        "question": "Do I need prior knowledge in technology?",
-        "answer": "No, we design programs for all levels. From fundamentals for beginners to advanced specializations for experts."
+        "quote": "We avoided automating the wrong processes and focused on real impact.",
+        "name": "BI Manager",
+        "role": "Manufacturing"
       },
       {
-        "question": "Are the courses in-person or online?",
-        "answer": "We offer hybrid modalities: live virtual sessions, in-person workshops and on-demand content for maximum flexibility."
+        "quote": "We now make technology decisions with less uncertainty and more criteria.",
+        "name": "People & Culture Lead",
+        "role": "Professional services"
       },
       {
-        "question": "Do they include official certification?",
-        "answer": "Yes, all our programs include verifiable digital certification recognized by the industry upon successful completion."
+        "quote": "We set technology priorities before committing budget.",
+        "name": "General Director",
+        "role": "Logistics services"
       },
       {
-        "question": "Is there follow-up after the course?",
-        "answer": "We include 3 months of post-training mentoring, access to Alumni community and lifetime content updates."
+        "quote": "We identified which processes were worth optimizing and which were not.",
+        "name": "Operations Manager",
+        "role": "Specialty retail"
       },
       {
-        "question": "Do you offer customized training for companies?",
-        "answer": "Yes, we design in-company programs adapted to specific needs, organizational culture and business objectives."
+        "quote": "We gained clarity to integrate AI without unrealistic expectations.",
+        "name": "Transformation Lead",
+        "role": "Legal services"
+      },
+      {
+        "quote": "We now decide with criteria and no longer depend on technical vendors.",
+        "name": "Founder",
+        "role": "Growing business"
       }
     ]
   },
   "finalCTA": {
-    "title": "Ready to transform your professional career?",
-    "subtitle": "Start your learning journey in technology and AI today",
-    "description": "Schedule a free information session and discover how our programs can accelerate your professional development.",
-    "cta": "Request information session",
-    "note": "Available at school.amoxtli.tech"
-  },
-  "contact": {
-    "title": "Get in {{highlight}}",
-    "highlight": "touch",
-    "subtitle": "Tell us about your learning objectives and we'll design a custom program",
-    "form": {
-      "name": "Full name",
-      "email": "Email address",
-      "company": "Company",
-      "industry": "Industry",
-      "companySize": "Company size",
-      "message": "Tell us about your training objectives",
-      "submit": "Submit request",
-      "submitting": "Submitting...",
-      "success": "Message sent! We'll contact you soon.",
-      "error": "Error sending. Please try again.",
-      "industries": {
-        "education": "Education",
-        "retail": "Retail",
-        "healthcare": "Healthcare",
-        "finance": "Finance",
-        "manufacturing": "Manufacturing",
-        "logistics": "Logistics",
-        "legal": "Legal",
-        "services": "Services",
-        "other": "Other"
-      },
-      "companySizes": {
-        "startup": "Startup (1-10)",
-        "small": "Small (11-50)",
-        "medium": "Medium (51-200)",
-        "large": "Large (201-1000)",
-        "enterprise": "Enterprise (1000+)"
-      }
+    "eyebrow": "Contact",
+    "title": "Make technology decisions with clarity.",
+    "subtitle": "Share your context and we’ll help you decide what to implement.",
+    "secondary": "Email us",
+    "card": {
+      "title": "Fast response",
+      "description": "We schedule a short session to understand your needs.",
+      "responseTime": "Response time: 24-48 hrs"
     }
   },
   "footer": {
-    "description": "Amoxtli School - Technology and AI training and consulting to transform organizations.",
+    "title": "Guidance to decide technology with criteria.",
+    "description": "Amoxtli School helps businesses make better technology decisions.",
+    "navigation": "Navigation",
     "links": {
-      "services": "Programs",
-      "industries": "Industries",
-      "cases": "Success cases",
+      "programs": "Programs",
+      "methodology": "Methodology",
+      "benefits": "Benefits",
       "contact": "Contact"
     },
     "legal": {
+      "title": "Legal",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     },
+    "contactLabel": "Contact",
+    "contact": "school@amoxtli.tech",
     "social": {
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "facebook": "Facebook"
     },
-    "contact": "school@amoxtli.tech",
-    "copyright": "© 2024 Amoxtli School. All rights reserved."
+    "copyright": "© 2026 Amoxtli School. All rights reserved.",
+    "note": "school.amoxtli.tech"
+  },
+  "cookies": {
+    "message": "We use cookies to improve the experience and understand how the site is used.",
+    "accept": "Accept all",
+    "reject": "Reject",
+    "customize": "Customize",
+    "save": "Save preferences",
+    "close": "Close",
+    "title": "Cookie preferences",
+    "subtitle": "Choose which cookies to allow. Necessary cookies are always on.",
+    "alwaysOn": "Always on",
+    "necessary": {
+      "title": "Necessary",
+      "description": "Required for basic functions, security, and language preferences."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Helps us understand usage and improve performance."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Used to measure campaigns and personalize content."
+    }
   }
 }

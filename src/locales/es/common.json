@@ -1,328 +1,267 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Nosotros",
-    "services": "Servicios",
-    "workflow": "Proceso",
-    "industries": "Industrias",
-    "cases": "Casos",
-    "faqs": "FAQs",
-    "contact": "Contacto"
+    "about": "Qué es",
+    "programs": "Programas",
+    "methodology": "Metodología",
+    "benefits": "Beneficios",
+    "stories": "Casos",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú"
   },
   "hero": {
-    "title": "Capacitación y consultoría en {{highlight}} para transformar tus procesos",
-    "highlight": "tecnología + IA",
-    "subtitle": "Adopción responsable, automatización y analítica para optimizar flujos y equipos.",
-    "description": "Acelera la transformación digital de tu organización con metodologías probadas y enfoque en resultados medibles.",
-    "cta": "Solicitar información"
+    "eyebrow": "",
+    "title": "Toma mejores decisiones tecnológicas",
+    "highlight": "antes de invertir.",
+    "subtitle": "Mentoría tecnológica para negocios que buscan optimizar procesos, implementar tecnología e integrar inteligencia artificial de forma práctica y estratégica.",
+    "cta": "Solicita información",
+    "secondary": "Explorar programas",
+    "meta": {
+      "label": "Especialidad",
+      "value": "Tecnología, datos e IA responsable"
+    },
+    "meta2": {
+      "label": "Formato",
+      "value": "Programas in-company + consultoría"
+    }
   },
   "about": {
-    "title": "Acelera la adopción de {{highlight}} en tu organización",
-    "highlight": "tecnología e IA",
-    "subtitle": "Diagnóstico, capacitación, prototipos y despliegue guiado para transformar procesos de manera segura y eficiente.",
+    "eyebrow": "Amoxtli School",
+    "title": "Amoxtli School es mentoría tecnológica y estratégica para negocios.",
+    "subtitle": "Acompañamos decisiones para optimizar procesos reales y usar tecnología e IA con criterio, claridad y enfoque operativo.",
+    "imageEyebrow": "Contexto real",
+    "imageTitle": "Decisiones conscientes antes de invertir.",
     "cards": {
       "training": {
-        "title": "Capacitación práctica",
-        "description": "Programas hands-on diseñados para equipos reales con casos de uso específicos de tu industria."
+        "title": "Decisiones tecnológicas clave",
+        "description": "Te acompañamos a decidir qué sí implementar y qué no, con base en tu operación."
       },
       "consulting": {
-        "title": "Consultoría aplicada",
-        "description": "Diagnóstico profundo y roadmap personalizado para implementar tecnología de forma estratégica."
+        "title": "Criterio antes de ejecutar",
+        "description": "Claridad para priorizar inversión, tiempo y esfuerzo con enfoque práctico."
       },
       "adoption": {
-        "title": "Adopción segura",
-        "description": "Marco de gobernanza, ética y cumplimiento para implementaciones responsables de IA."
+        "title": "Implementación consciente",
+        "description": "Tecnología alineada a procesos reales, sin promesas vacías."
+      },
+      "results": {
+        "title": "Acompañamiento experto",
+        "description": "Traducimos lo técnico a lenguaje de negocio y guiamos decisiones con criterio."
       }
+    },
+    "metrics": {
+      "training": "Decisiones con criterio",
+      "automation": "Procesos optimizados",
+      "analytics": "Claridad operativa",
+      "governance": "Implementación consciente",
+      "adoption": "IA con sentido",
+      "support": "Acompañamiento real"
     }
   },
   "services": {
-    "title": "Nuestros {{highlight}}",
-    "highlight": "programas de capacitación",
-    "subtitle": "Cursos especializados y talleres prácticos para dominar tecnología e IA en tu organización",
+    "eyebrow": "Programas y servicios",
+    "title": "Nuestro enfoque",
+    "subtitle": "Decidir, diseñar e implementar tecnología con sentido, estructura y enfoque operativo.",
     "cards": {
-      "ai-fundamentals": {
-        "title": "Fundamentos de IA para Empresas",
-        "description": "Curso intensivo sobre conceptos clave de IA, casos de uso empresariales y estrategias de implementación.",
-        "results": [
-          "80% mejora comprensión IA",
-          "Identificación de 5+ casos de uso",
-          "Roadmap personalizado"
-        ]
+      "ai-foundations": {
+        "title": "Criterio para integrar IA",
+        "description": "Definimos cuándo, cómo y por qué usar IA con impacto real en tu operación.",
+        "meta": "Decisiones claras"
       },
-      "prompt-engineering": {
-        "title": "Taller de Prompt Engineering",
-        "description": "Domina el arte de crear prompts efectivos para ChatGPT, Claude y otras herramientas de IA generativa.",
-        "results": [
-          "90% mejora en prompts efectivos",
-          "50+ técnicas avanzadas",
-          "Casos prácticos reales"
-        ]
+      "automation": {
+        "title": "Optimización de procesos reales",
+        "description": "Detectamos fricciones y elegimos tecnología que sí mejora tu operación.",
+        "meta": "Impacto práctico"
       },
-      "automation-workshop": {
-        "title": "Automatización Sin Código",
-        "description": "Aprende a automatizar procesos usando herramientas no-code como Zapier, Make y Power Automate.",
-        "results": [
-          "5+ automatizaciones implementadas",
-          "Herramientas prácticas",
-          "Ahorro inmediato de tiempo"
-        ]
+      "applied-analytics": {
+        "title": "Decisiones basadas en datos",
+        "description": "Métricas útiles para priorizar inversión y acciones con claridad.",
+        "meta": "Criterio operativo"
       },
-      "data-analytics": {
-        "title": "Analítica de Datos para Equipos",
-        "description": "Curso práctico de análisis de datos, visualización y toma de decisiones basada en datos.",
-        "results": [
-          "Dashboards funcionales",
-          "Métricas clave identificadas",
-          "Cultura data-driven"
-        ]
+      "responsible-ai": {
+        "title": "Implementación consciente",
+        "description": "Uso de IA y tecnología alineado a tu realidad, sin moda ni humo.",
+        "meta": "Uso responsable"
       },
-      "ai-governance": {
-        "title": "Gobernanza y Ética de IA",
-        "description": "Taller sobre uso responsable de IA, políticas internas y cumplimiento regulatorio.",
-        "results": [
-          "Políticas de IA implementadas",
-          "100% cumplimiento ético",
-          "Framework de riesgos"
-        ]
+      "product-labs": {
+        "title": "Definición de tecnología correcta",
+        "description": "Identificamos qué herramienta sí tiene sentido antes de invertir.",
+        "meta": "Prioridad real"
       },
-      "digital-transformation": {
-        "title": "Liderazgo en Transformación Digital",
-        "description": "Programa ejecutivo para líderes sobre estrategia digital, cambio organizacional y adopción tecnológica.",
-        "results": [
-          "Estrategia digital clara",
-          "Plan de cambio cultural",
-          "Métricas de transformación"
-        ]
+      "tech-strategy": {
+        "title": "Acompañamiento estratégico",
+        "description": "Te damos claridad para decidir sin depender de proveedores técnicos.",
+        "meta": "Criterio experto"
       }
     }
   },
-  "industries": {
-    "title": "{{highlight}} que transformamos",
-    "highlight": "Industrias",
-    "subtitle": "Adaptamos nuestros programas de capacitación a las necesidades específicas de tu sector",
-    "list": [
-      "Educación",
-      "Retail",
-      "Salud",
-      "Finanzas",
-      "Manufactura",
-      "Logística",
-      "Legal",
-      "Servicios"
-    ]
-  },
   "workflow": {
-    "title": "Nuestro {{highlight}} de capacitación",
-    "highlight": "proceso",
-    "subtitle": "Metodología educativa probada en 5 etapas para garantizar el aprendizaje efectivo",
+    "eyebrow": "Metodología",
+    "title": "Cómo trabajamos con tu equipo.",
+    "subtitle": "Un proceso claro para decidir, implementar y acompañar tecnología con sentido.",
     "steps": [
       {
-        "title": "Evaluación de Necesidades",
-        "description": "Análisis de habilidades actuales, identificación de brechas y definición de objetivos de aprendizaje."
+        "title": "Diagnóstico operativo",
+        "description": "Entendemos procesos reales y dónde la tecnología puede ayudar."
       },
       {
-        "title": "Diseño Curricular",
-        "description": "Programa personalizado con contenidos, actividades prácticas, timelines y métricas de éxito."
+        "title": "Criterio y claridad",
+        "description": "Definimos qué sí tiene sentido implementar y qué no."
       },
       {
-        "title": "Capacitación Inmersiva",
-        "description": "Talleres hands-on, casos reales de la industria y ejercicios prácticos con herramientas actuales."
+        "title": "Plan de acción",
+        "description": "Priorizamos inversión, tiempos y pasos viables."
       },
       {
-        "title": "Aplicación Práctica",
-        "description": "Proyectos reales en el entorno de trabajo con mentoría continua y feedback personalizado."
+        "title": "Implementación consciente",
+        "description": "Acompañamos la integración práctica de tecnología e IA."
       },
       {
-        "title": "Seguimiento y Certificación",
-        "description": "Evaluación de competencias, certificación oficial y plan de desarrollo continuo."
-      }
-    ]
-  },
-  "useCases": {
-    "title": "{{highlight}} de transformación",
-    "highlight": "Casos reales",
-    "subtitle": "Ejemplos de capacitaciones exitosas en diferentes industrias",
-    "cases": [
-      {
-        "industry": "Educación",
-        "before": "Profesores sin conocimiento de IA",
-        "after": "Equipo docente creando contenido con IA",
-        "impact": "70% reducción tiempo preparación clases"
+        "title": "Acompañamiento continuo",
+        "description": "Seguimiento experto para ajustar y decidir mejor."
       },
       {
-        "industry": "Retail",
-        "before": "Atención al cliente manual y lenta",
-        "after": "Equipo capacitado en chatbots y automatización",
-        "impact": "85% consultas resueltas automáticamente"
-      },
-      {
-        "industry": "Finanzas",
-        "before": "Análisis de datos manual y tardío",
-        "after": "Analistas certificados en IA y automatización",
-        "impact": "95% reducción errores y 80% ahorro tiempo"
-      },
-      {
-        "industry": "Salud",
-        "before": "Personal sin formación digital",
-        "after": "Equipo médico usando IA para diagnóstico",
-        "impact": "60% mejora en eficiencia administrativa"
+        "title": "Resultados esperados",
+        "description": "Menos incertidumbre, mejor uso del presupuesto y procesos más eficientes."
       }
     ]
   },
   "benefits": {
-    "title": "{{highlight}} de capacitarte con nosotros",
-    "highlight": "Beneficios",
-    "subtitle": "Resultados de aprendizaje medibles que impactan directamente en tu desarrollo profesional",
-    "description": "Nuestro enfoque pedagógico garantiza adquisición efectiva de competencias con aplicación inmediata.",
+    "eyebrow": "Resultados",
+    "title": "Resultados esperados",
+    "subtitle": "Lo que cambia cuando decides con criterio.",
     "list": [
       {
-        "title": "Aprendizaje acelerado y práctico",
-        "description": "Metodología hands-on con casos reales que acelera la curva de aprendizaje significativamente.",
-        "metric": "70% más rápido que capacitación tradicional"
+        "title": "Menos incertidumbre tecnológica",
+        "description": "Decisiones claras antes de invertir.",
+        "metric": "Claridad real"
       },
       {
-        "title": "Competencias inmediatamente aplicables",
-        "description": "Habilidades que puedes usar desde el primer día en tu trabajo con herramientas reales.",
-        "metric": "95% aplicación inmediata en el trabajo"
+        "title": "Mejor uso del presupuesto",
+        "description": "Inversión enfocada en lo que sí aporta.",
+        "metric": "Inversión consciente"
       },
       {
-        "title": "Certificaciones reconocidas",
-        "description": "Credenciales oficiales que validan tus nuevas competencias ante empleadores y clientes.",
-        "metric": "100% reconocimiento empresarial"
+        "title": "Procesos más eficientes",
+        "description": "Optimización real, sin automatizar lo incorrecto.",
+        "metric": "Impacto práctico"
       },
       {
-        "title": "Mentorías personalizadas",
-        "description": "Acompañamiento individual de expertos para resolver dudas y acelerar tu progreso.",
-        "metric": "Disponibilidad 24/7 para consultas"
-      },
-      {
-        "title": "Red profesional ampliada",
-        "description": "Conexión con profesionales de tu industria y acceso a comunidad exclusiva de alumni.",
-        "metric": "500+ profesionales en la red"
-      },
-      {
-        "title": "Actualización continua",
-        "description": "Acceso de por vida a nuevos contenidos y actualizaciones del programa sin costo adicional.",
-        "metric": "Contenido actualizado mensualmente"
+        "title": "Capacidad de decidir con criterio",
+        "description": "Menos dependencia de proveedores técnicos.",
+        "metric": "Autonomía"
       }
     ]
   },
-  "caseStudies": {
-    "title": "{{highlight}} de éxito",
-    "highlight": "Historias",
-    "subtitle": "Casos reales de profesionales transformados con nuestros programas",
-    "cases": [
+  "testimonials": {
+    "eyebrow": "Casos reales",
+    "title": "Experiencias reales",
+    "subtitle": "Resultados de negocios que decidieron con claridad.",
+    "items": [
       {
-        "title": "Gerente de Marketing domina IA generativa",
-        "challenge": "Equipo de marketing lento en creación de contenido y sin conocimiento de IA",
-        "solution": "Programa intensivo de IA aplicada al marketing y automatización de contenidos",
-        "impact": "300% aumento en productividad, 50% reducción en costos de contenido"
+        "quote": "Definimos qué tecnología tenía sentido y evitamos invertir en herramientas innecesarias.",
+        "name": "Líder de Operaciones",
+        "role": "Retail regional"
       },
       {
-        "title": "Directora Académica lidera transformación digital",
-        "challenge": "Institución educativa sin estrategia digital y resistencia al cambio tecnológico",
-        "solution": "Capacitación en liderazgo digital y programa de adopción tecnológica",
-        "impact": "90% adopción docente, 40% mejora en satisfacción estudiantil"
+        "quote": "Tuvimos claridad para priorizar procesos y elegir la integración correcta.",
+        "name": "Head of Data",
+        "role": "Servicios financieros"
       },
       {
-        "title": "Analista Financiero se certifica en IA",
-        "challenge": "Procesos manuales de análisis y falta de herramientas de automatización",
-        "solution": "Curso de analítica avanzada y automatización financiera con IA",
-        "impact": "80% reducción tiempo reportes, 95% precisión en pronósticos"
-      }
-    ]
-  },
-  "faqs": {
-    "title": "{{highlight}} frecuentes",
-    "highlight": "Preguntas",
-    "subtitle": "Respuestas a las dudas más comunes sobre nuestros programas de capacitación",
-    "questions": [
-      {
-        "question": "¿Cuánto tiempo duran los programas de capacitación?",
-        "answer": "Varía según el programa: talleres intensivos de 1-2 días, cursos de 4-8 semanas, y programas ejecutivos de 3-6 meses con modalidades flexibles."
+        "quote": "El acompañamiento nos dio criterio para decidir sin depender de proveedores.",
+        "name": "Directora de Innovación",
+        "role": "Sector salud"
       },
       {
-        "question": "¿Necesito conocimientos previos en tecnología?",
-        "answer": "No, diseñamos programas para todos los niveles. Desde fundamentos para principiantes hasta especializaciones avanzadas para expertos."
+        "quote": "Evitamos automatizar procesos incorrectos y enfocamos el esfuerzo donde sí impacta.",
+        "name": "Gerente de BI",
+        "role": "Manufactura"
       },
       {
-        "question": "¿Los cursos son presenciales u online?",
-        "answer": "Ofrecemos modalidades híbridas: sesiones virtuales en vivo, talleres presenciales y contenido on-demand para máxima flexibilidad."
+        "quote": "Ahora tomamos decisiones tecnológicas con menos incertidumbre y más criterio.",
+        "name": "People & Culture Lead",
+        "role": "Servicios profesionales"
       },
       {
-        "question": "¿Incluyen certificación oficial?",
-        "answer": "Sí, todos nuestros programas incluyen certificación digital verificable y reconocida por la industria al completar exitosamente."
+        "quote": "Definimos prioridades tecnológicas antes de comprometer presupuesto.",
+        "name": "Director General",
+        "role": "Servicios logísticos"
       },
       {
-        "question": "¿Hay seguimiento después del curso?",
-        "answer": "Incluimos 3 meses de mentoría post-capacitación, acceso a comunidad Alumni y actualizaciones de contenido de por vida."
+        "quote": "Identificamos qué procesos sí valía la pena optimizar y cuáles no.",
+        "name": "Gerente de Operaciones",
+        "role": "Retail especializado"
       },
       {
-        "question": "¿Ofrecen capacitación personalizada para empresas?",
-        "answer": "Sí, diseñamos programas in-company adaptados a necesidades específicas, cultura organizacional y objetivos de negocio."
+        "quote": "Ganamos claridad para integrar IA sin expectativas irreales.",
+        "name": "Líder de Transformación",
+        "role": "Servicios legales"
+      },
+      {
+        "quote": "Tomamos decisiones con criterio y dejamos de depender de proveedores técnicos.",
+        "name": "Fundador",
+        "role": "Negocio en crecimiento"
       }
     ]
   },
   "finalCTA": {
-    "title": "¿Listo para transformar tu carrera profesional?",
-    "subtitle": "Comienza tu journey de aprendizaje en tecnología e IA hoy mismo",
-    "description": "Agenda una sesión informativa gratuita y descubre cómo nuestros programas pueden acelerar tu desarrollo profesional.",
-    "cta": "Solicitar sesión informativa",
-    "note": "Disponible en school.amoxtli.tech"
-  },
-  "contact": {
-    "title": "{{highlight}} en contacto",
-    "highlight": "Ponte",
-    "subtitle": "Cuéntanos sobre tus objetivos de aprendizaje y diseñemos un programa a medida",
-    "form": {
-      "name": "Nombre completo",
-      "email": "Correo electrónico",
-      "company": "Empresa",
-      "industry": "Industria",
-      "companySize": "Tamaño de empresa",
-      "message": "Cuéntanos sobre tus objetivos de capacitación",
-      "submit": "Enviar solicitud",
-      "submitting": "Enviando...",
-      "success": "¡Mensaje enviado! Te contactaremos pronto.",
-      "error": "Error al enviar. Por favor intenta de nuevo.",
-      "industries": {
-        "education": "Educación",
-        "retail": "Retail",
-        "healthcare": "Salud",
-        "finance": "Finanzas",
-        "manufacturing": "Manufactura",
-        "logistics": "Logística",
-        "legal": "Legal",
-        "services": "Servicios",
-        "other": "Otro"
-      },
-      "companySizes": {
-        "startup": "Startup (1-10)",
-        "small": "Pequeña (11-50)",
-        "medium": "Mediana (51-200)",
-        "large": "Grande (201-1000)",
-        "enterprise": "Empresa (1000+)"
-      }
+    "eyebrow": "Contacto",
+    "title": "Toma decisiones tecnológicas con claridad.",
+    "subtitle": "Cuéntanos tu contexto y te acompañamos a decidir qué sí implementar.",
+    "secondary": "Escribir por correo",
+    "card": {
+      "title": "Respuesta rápida",
+      "description": "Agendamos una sesión breve para entender tu necesidad.",
+      "responseTime": "Tiempo de respuesta: 24-48 hrs"
     }
   },
   "footer": {
-    "description": "Amoxtli School - Capacitación y consultoría en tecnología e IA para transformar organizaciones.",
+    "title": "Acompañamiento para decidir tecnología con criterio.",
+    "description": "Amoxtli School ayuda a negocios a tomar mejores decisiones tecnológicas.",
+    "navigation": "Navegación",
     "links": {
-      "services": "Programas",
-      "industries": "Industrias", 
-      "cases": "Casos de éxito",
+      "programs": "Programas",
+      "methodology": "Metodología",
+      "benefits": "Beneficios",
       "contact": "Contacto"
     },
     "legal": {
+      "title": "Legal",
       "privacy": "Aviso de Privacidad",
       "terms": "Términos de Servicio"
     },
+    "contactLabel": "Contacto",
+    "contact": "school@amoxtli.tech",
     "social": {
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "facebook": "Facebook"
     },
-    "contact": "school@amoxtli.tech",
-    "copyright": "© 2024 Amoxtli School. Todos los derechos reservados."
+    "copyright": "© 2026 Amoxtli School. Todos los derechos reservados.",
+    "note": "school.amoxtli.tech"
+  },
+  "cookies": {
+    "message": "Usamos cookies para mejorar la experiencia y entender cómo se usa el sitio.",
+    "accept": "Aceptar todo",
+    "reject": "Rechazar",
+    "customize": "Personalizar",
+    "save": "Guardar preferencias",
+    "close": "Cerrar",
+    "title": "Preferencias de cookies",
+    "subtitle": "Elige qué cookies permitir. Las necesarias están siempre activas.",
+    "alwaysOn": "Siempre activas",
+    "necessary": {
+      "title": "Necesarias",
+      "description": "Requeridas para funciones básicas, seguridad y preferencias de idioma."
+    },
+    "analytics": {
+      "title": "Analítica",
+      "description": "Nos ayuda a entender el uso y mejorar el rendimiento."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Se usan para medir campañas y personalizar contenido."
+    }
   }
 }

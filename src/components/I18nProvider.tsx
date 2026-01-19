@@ -22,7 +22,7 @@ export default function I18nProvider({ children }: I18nProviderProps) {
   }, []);
 
   if (!isInitialized) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;

@@ -11,28 +11,26 @@ export interface SEOProps {
 }
 
 export const defaultSEO: SEOProps = {
-    title: "Amoxtli School | Capacitación y Consultoría en Tecnología e IA",
+    title: "Amoxtli School | Mentoría Tecnológica para Negocios en CDMX",
     description:
-        "Adopción responsable de tecnología e IA para optimizar flujos de trabajo en diversas industrias. Capacitación, consultoría y despliegue.",
+        "Mentoría tecnológica y estratégica para negocios en CDMX y México. Decisiones claras antes de invertir en tecnología e IA.",
     keywords: [
         "Amoxtli School",
-        "capacitación IA",
-        "consultoría tecnología",
-        "automatización procesos",
-        "transformación digital",
-        "inteligencia artificial empresarial",
-        "adopción responsable IA",
-        "gobierno datos",
-        "compliance IA",
-        "chatbots empresariales",
-        "RPA",
-        "analítica datos",
-        "onboarding tecnológico",
-        "capacitación empresarial",
-        "consultoría IA México",
+        "mentoría tecnológica",
+        "decisiones tecnológicas",
+        "IA práctica",
+        "optimización de procesos",
+        "criterio tecnológico",
+        "implementación consciente",
+        "consultoría tecnológica CDMX",
+        "consultoría tecnológica México",
+        "inteligencia artificial para negocios",
+        "adopción de IA con criterio",
+        "analítica para decisiones",
+        "acompañamiento tecnológico",
         "Amoxtli",
     ],
-    image: "/og-image.png",
+    image: "/og-image.svg",
     url: "https://school.amoxtli.tech",
     type: "website",
     locale: "es_MX",
@@ -93,21 +91,18 @@ export const organizationSchema = {
     "@type": "Organization",
     name: "Amoxtli School",
     description:
-        "Capacitación y consultoría en tecnología e inteligencia artificial para transformar organizaciones",
+        "Mentoría tecnológica y estratégica para negocios en México",
     url: "https://school.amoxtli.tech",
-    logo: "https://school.amoxtli.tech/logo.png",
+    logo: "https://school.amoxtli.tech/assets/main.svg",
     contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+52-1-234-567-8900", // Update with real phone
         contactType: "customer service",
-        email: "school@amoxtli.tech",
+        email: "legal@amoxtli.tech",
         availableLanguage: ["Spanish", "English"],
     },
-    address: {
-        "@type": "PostalAddress",
-        addressCountry: "MX",
-        addressLocality: "Mexico City", // Update with real address
-        addressRegion: "CDMX",
+    areaServed: {
+        "@type": "Country",
+        name: "Mexico",
     },
     sameAs: [
         "https://www.linkedin.com/company/amoxtli-web-developers",
@@ -125,9 +120,9 @@ export const organizationSchema = {
 export const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Capacitación y Consultoría en IA",
+    name: "Mentoría Tecnológica para Negocios",
     description:
-        "Servicios integrales de capacitación y consultoría para adopción responsable de tecnología e IA",
+        "Acompañamiento estratégico para decidir, diseñar e implementar tecnología e IA con criterio",
     provider: {
         "@type": "Organization",
         name: "Amoxtli School",
@@ -140,53 +135,53 @@ export const servicesSchema = {
         },
         {
             "@type": "Place",
-            name: "International",
+            name: "Mexico City",
         },
     ],
     hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Servicios de Transformación Digital",
+        name: "Servicios de Mentoría Tecnológica",
         itemListElement: [
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Capacitación en IA Aplicada",
+                    name: "Decisiones tecnológicas con criterio",
                 },
             },
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Automatización de Flujos",
+                    name: "Optimización de procesos",
                 },
             },
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Asistentes y Chatbots Privados",
+                    name: "Integración consciente de IA",
                 },
             },
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Analítica y Tableros",
+                    name: "Analítica para decisiones",
                 },
             },
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Gobernanza y Cumplimiento",
+                    name: "Criterio y acompañamiento estratégico",
                 },
             },
             {
                 "@type": "Offer",
                 itemOffered: {
                     "@type": "Service",
-                    name: "Onboarding Tecnológico",
+                    name: "Prioridad y ejecución consciente",
                 },
             },
         ],

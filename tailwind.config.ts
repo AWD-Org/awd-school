@@ -12,15 +12,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        ink: "var(--ink)",
+        paper: "var(--paper)",
         brand: {
-          pink: "#FA206F",
-          background: "#FBFBFB",
-          text: "#101010",
-          white: "#FBFBFB",
+          primary: "var(--brand-primary)",
+          secondary: "var(--brand-secondary)",
+          accent: "var(--brand-accent)",
         },
       },
       fontFamily: {
-        sans: ["var(--font-quicksand)", "Arial", "Helvetica", "sans-serif"],
+        sans: ["var(--font-space-grotesk)", "Arial", "Helvetica", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-in-out",

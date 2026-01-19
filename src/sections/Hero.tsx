@@ -1,36 +1,10 @@
 "use client";
 
-import { Box, Typography, Container } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AWSchoolButton from "../components/AWSchoolButton";
-import AWSchoolTitle from "../components/AWSchoolTitle";
 import { track } from "../utils/analytics";
-
-const textVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-      duration: 0.8,
-    },
-  },
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
-    },
-  },
-};
+import Image from "next/image";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -43,138 +17,60 @@ const Hero = () => {
     }
   };
 
+  const handleNavClick = (path: string, label: string) => {
+    track("hero_nav_click", { section: label });
+    const element = document.querySelector(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        position: "relative",
-        background: "linear-gradient(135deg, #FBFBFB 0%, #F5F5F5 100%)",
-        pt: { xs: 10, sm: 12, md: 8 },
-        pb: { xs: 6, sm: 8, md: 10 },
-        width: "100%",
-      }}
+    <section
+      id="home"
+      className="relative -mt-[88px] min-h-screen overflow-hidden bg-paper pt-[88px] z-0"
     >
-      {/* Background decoration */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: "20%",
-          right: "10%",
-          width: { xs: 200, sm: 300, md: 400 },
-          height: { xs: 200, sm: 300, md: 400 },
-          borderRadius: "50%",
-          background: "linear-gradient(45deg, #FA206F15, #FA206F05)",
-          filter: "blur(100px)",
-          zIndex: 0,
-        }}
+      <Image
+        src="/hero-texture.svg"
+        alt=""
+        fill
+        className="object-cover blur-[2px]"
+        priority
+        sizes="100vw"
       />
-      
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "10%",
-          left: "5%",
-          width: { xs: 150, sm: 250, md: 350 },
-          height: { xs: 150, sm: 250, md: 350 },
-          borderRadius: "50%",
-          background: "linear-gradient(45deg, #FA206F10, #FA206F03)",
-          filter: "blur(80px)",
-          zIndex: 0,
-        }}
-      />
+      <div className="absolute inset-0 bg-paper/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(250,31,111,0.12),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_10%,rgba(79,70,229,0.15),transparent_55%)]" />
 
-      {/* Full width container */}
-      <Box
-        sx={{
-          width: "100%",
-          maxWidth: "100%",
-          position: "relative",
-          zIndex: 1,
-          px: { xs: 3, sm: 4, md: 6, lg: 8, xl: 12 }, // Responsive padding
-        }}
-      >
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
-          <Box
-            sx={{
-              textAlign: "center",
-              width: "100%",
-              maxWidth: "none", // Remove max width constraint
-            }}
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl items-center justify-end px-6 py-16">
+        <div className="flex max-w-[560px] flex-col items-end text-right text-ink">
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            {/* Main Title */}
-            <motion.div variants={textVariants}>
-                <Typography
-                variant="h1"
-                sx={{
-                  fontWeight: 400,
-                  lineHeight: 1.1,
-                  fontSize: { 
-                  xs: "2rem", 
-                  sm: "2.8rem", 
-                  md: "3.5rem", 
-                  lg: "4.2rem",
-                  xl: "5rem" 
-                  },
-                  color: "#FA206F",
-                  mb: 3,
-                  width: "100%",
-                  "& strong": {
-                  fontWeight: 700,
-                  color: "#FA206F",
-                  }
-                }}
-                >
-                {t("hero.title", { highlight: "" }).replace("{{highlight}}", "")}
-                <strong> {t("hero.highlight")} </strong>
-                para transformar tus procesos
-                </Typography>
-            </motion.div>
-
-            {/* Subtitle */}
-            <motion.div variants={textVariants}>
-              <Typography
-                variant="h5"
-                sx={{
-                  fontSize: { xs: "1.1rem", sm: "1.4rem", md: "1.7rem", lg: "1.9rem" },
-                  fontWeight: 400,
-                  mb: 3,
-                  lineHeight: 1.5,
-                  maxWidth: "1000px",
-                  mx: "auto",
-                }}
-              >
-                {t("hero.subtitle")}
-              </Typography>
-            </motion.div>
-
-            {/* CTA Button */}
-            <motion.div 
-              variants={textVariants}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <AWSchoolButton
-                onClick={handleCTAClick}
-                size="large"
-                backgroundColor="#FA206F"
-                fontColor="#FBFBFB"
-                borderColor="#FA206F"
-                hoverBackgroundColor="#E01D63"
-                hoverFontColor="#FBFBFB"
-              >
+            {t("hero.eyebrow") ? (
+              <p className="text-sm text-ink/60">{t("hero.eyebrow")}</p>
+            ) : null}
+            <h1 className="mt-4 text-[2.6rem] font-semibold leading-[1.05] sm:text-[3.4rem] md:text-[4rem]">
+              {t("hero.title")}{" "}
+              <span className="text-brand-accent">{t("hero.highlight")}</span>
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-ink/70 sm:text-lg">
+              {t("hero.subtitle")}
+            </p>
+            <div className="mt-6 flex flex-wrap items-center justify-end gap-4">
+              <AWSchoolButton onClick={handleCTAClick} variant="outline" size="lg">
                 {t("hero.cta")}
               </AWSchoolButton>
-            </motion.div>
-          </Box>
-        </motion.div>
-      </Box>
-    </Box>
+              <AWSchoolButton onClick={() => handleNavClick("#programs", "programs")} variant="solid" size="lg">
+                {t("hero.secondary")}
+              </AWSchoolButton>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 };
 
