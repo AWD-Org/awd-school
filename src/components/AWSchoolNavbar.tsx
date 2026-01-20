@@ -95,16 +95,10 @@ const AWSchoolNavbar: React.FC = () => {
 
     let rafId = 0;
     const updateActive = () => {
-      const offset = 120;
-      const atBottom =
-        container.scrollTop + container.clientHeight >=
-        container.scrollHeight - 16;
-      if (atBottom) {
-        setActiveSection("#contact");
-        return;
-      }
+      const scrollTop = container.scrollTop;
+      const viewportMid = scrollTop + container.clientHeight * 0.4;
       const current = sections
-        .filter((section) => section.offsetTop <= container.scrollTop + offset)
+        .filter((section) => section.offsetTop <= viewportMid)
         .pop();
       if (current) {
         setActiveSection(`#${current.id}`);
