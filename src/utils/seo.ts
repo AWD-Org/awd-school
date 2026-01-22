@@ -11,12 +11,16 @@ export interface SEOProps {
 }
 
 export const defaultSEO: SEOProps = {
-    title: "Amoxtli School | Mentoría Tecnológica para Negocios en CDMX",
+    title: "Amoxtli School | Mentoría tecnológica y orientación profesional",
     description:
-        "Mentoría tecnológica y estratégica para negocios en CDMX y México. Decisiones claras antes de invertir en tecnología e IA.",
+        "Mentoría estratégica para empresas que integran tecnología e IA con criterio, y orientación profesional para talento digital en México.",
     keywords: [
         "Amoxtli School",
         "mentoría tecnológica",
+        "orientación profesional",
+        "orientación vocacional tech",
+        "ruta de aprendizaje",
+        "carrera en tecnología",
         "decisiones tecnológicas",
         "IA práctica",
         "optimización de procesos",
@@ -25,6 +29,8 @@ export const defaultSEO: SEOProps = {
         "consultoría tecnológica CDMX",
         "consultoría tecnológica México",
         "inteligencia artificial para negocios",
+        "mentoría para developers",
+        "formación tecnológica",
         "adopción de IA con criterio",
         "analítica para decisiones",
         "acompañamiento tecnológico",
@@ -91,7 +97,7 @@ export const organizationSchema = {
     "@type": "Organization",
     name: "Amoxtli School",
     description:
-        "Mentoría tecnológica y estratégica para negocios en México",
+        "Mentoría tecnológica para empresas y orientación profesional para talento digital en México",
     url: "https://school.amoxtli.tech",
     logo: "https://school.amoxtli.tech/assets/main.svg",
     contactPoint: {
@@ -120,14 +126,14 @@ export const organizationSchema = {
 export const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Mentoría Tecnológica para Negocios",
+    name: "Mentoría tecnológica y orientación profesional",
     description:
-        "Acompañamiento estratégico para decidir, diseñar e implementar tecnología e IA con criterio",
+        "Acompañamiento estratégico para empresas y guía profesional para talento digital",
     provider: {
         "@type": "Organization",
         name: "Amoxtli School",
     },
-    serviceType: "Business Consulting",
+    serviceType: "Business Consulting, Career Guidance",
     areaServed: [
         {
             "@type": "Country",
@@ -140,7 +146,7 @@ export const servicesSchema = {
     ],
     hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Servicios de Mentoría Tecnológica",
+        name: "Servicios de Mentoría y Orientación",
         itemListElement: [
             {
                 "@type": "Offer",
@@ -182,6 +188,27 @@ export const servicesSchema = {
                 itemOffered: {
                     "@type": "Service",
                     name: "Prioridad y ejecución consciente",
+                },
+            },
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Orientación vocacional y de carrera en tecnología",
+                },
+            },
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Ruta de aprendizaje y empleabilidad",
+                },
+            },
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Visión de negocio para proyectos digitales",
                 },
             },
         ],
