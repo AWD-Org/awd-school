@@ -9,6 +9,7 @@ import CookieBanner from "../components/CookieBanner";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Services from "../sections/Services";
+import TalentPrograms from "../sections/TalentPrograms";
 import Workflow from "../sections/Workflow";
 import Benefits from "../sections/Benefits";
 import Testimonials from "../sections/Testimonials";
@@ -77,6 +78,9 @@ function MainContent() {
         </div>
         <div className="snap-section snap-center-section">
           <Services />
+        </div>
+        <div className="snap-section snap-center-section">
+          <TalentPrograms />
         </div>
         <div className="snap-section snap-center-section">
           <Workflow />

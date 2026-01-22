@@ -8,7 +8,7 @@ import FadeIn from "../components/FadeIn";
 const Services: React.FC = () => {
   const { t } = useTranslation();
 
-  const cards = [
+  const businessCards = [
     { key: "ai-foundations", icon: Brain },
     { key: "automation", icon: Workflow },
     { key: "applied-analytics", icon: LineChart },
@@ -28,32 +28,46 @@ const Services: React.FC = () => {
     >
       <div className="mx-auto w-full max-w-6xl px-6 py-20">
         <FadeIn>
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 text-center">
             <h2 className="text-2xl font-semibold text-ink sm:text-3xl">
               {t("services.title")}
             </h2>
-            <p className="max-w-[420px] text-sm text-ink/70 sm:text-base">
+            <p className="text-sm text-ink/70 sm:text-base">
               {t("services.subtitle")}
             </p>
           </div>
         </FadeIn>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {cards.map(({ key, icon: Icon }, index) => (
-            <FadeIn key={key} delay={index * 0.08}>
-              <article className="flex min-h-[200px] flex-col justify-between gap-3 rounded-2xl border border-ink/10 bg-paper p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-[0_12px_24px_rgba(26,26,26,0.08)]">
-                <div className="flex flex-col gap-2">
-                  <Icon className="h-5 w-5 text-ink/30" />
-                  <h3 className="text-lg font-semibold text-ink">
-                    {t(`services.cards.${key}.title`)}
-                  </h3>
-                </div>
-                <p className="text-sm leading-relaxed text-ink/70">
-                  {t(`services.cards.${key}.description`)}
-                </p>
-                <p className="text-xs text-ink/40">{t(`services.cards.${key}.meta`)}</p>
-              </article>
-            </FadeIn>
-          ))}
+        <div className="mt-12 space-y-14">
+          <div>
+            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+              <h3 className="text-xl font-semibold text-ink">
+                {t("services.blocks.business.title")}
+              </h3>
+              <p className="max-w-[420px] text-sm text-ink/70 sm:text-base">
+                {t("services.blocks.business.subtitle")}
+              </p>
+            </div>
+            <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {businessCards.map(({ key, icon: Icon }, index) => (
+                <FadeIn key={key} delay={index * 0.08}>
+                  <article className="flex min-h-[200px] flex-col justify-between gap-3 rounded-2xl border border-ink/10 bg-paper p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-accent hover:shadow-[0_12px_24px_rgba(26,26,26,0.08)]">
+                    <div className="flex flex-col gap-2">
+                      <Icon className="h-5 w-5 text-ink/30" />
+                      <h4 className="text-lg font-semibold text-ink">
+                        {t(`services.cards.${key}.title`)}
+                      </h4>
+                    </div>
+                    <p className="text-sm leading-relaxed text-ink/70">
+                      {t(`services.cards.${key}.description`)}
+                    </p>
+                    <p className="text-xs text-ink/40">
+                      {t(`services.cards.${key}.meta`)}
+                    </p>
+                  </article>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>

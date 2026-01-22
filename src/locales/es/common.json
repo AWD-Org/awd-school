@@ -11,9 +11,9 @@
   },
   "hero": {
     "eyebrow": "",
-    "title": "Toma mejores decisiones tecnológicas",
-    "highlight": "antes de invertir.",
-    "subtitle": "Mentoría tecnológica para negocios que buscan optimizar procesos, implementar tecnología e integrar inteligencia artificial de forma práctica y estratégica.",
+    "title": "Decisiones y carreras",
+    "highlight": "tecnológicas con sentido.",
+    "subtitle": "Acompañamiento estratégico para empresas que integran tecnología e IA, y orientación clara para developers que buscan construir su camino profesional.",
     "cta": "Solicita información",
     "secondary": "Explorar programas",
     "meta": {
@@ -27,8 +27,8 @@
   },
   "about": {
     "eyebrow": "Amoxtli School",
-    "title": "Amoxtli School es mentoría tecnológica y estratégica para negocios.",
-    "subtitle": "Acompañamos decisiones para optimizar procesos reales y usar tecnología e IA con criterio, claridad y enfoque operativo.",
+    "title": "Amoxtli School es mentoría tecnológica y estratégica para negocios y talento digital.",
+    "subtitle": "Acompañamos decisiones para optimizar procesos reales y usar tecnología e IA con criterio. También guiamos a personas a definir su ruta profesional en la industria.",
     "imageEyebrow": "Contexto real",
     "imageTitle": "Decisiones conscientes antes de invertir.",
     "cards": {
@@ -61,7 +61,17 @@
   "services": {
     "eyebrow": "Programas y servicios",
     "title": "Nuestro enfoque",
-    "subtitle": "Decidir, diseñar e implementar tecnología con sentido, estructura y enfoque operativo.",
+    "subtitle": "Dos rutas complementarias: acompañamiento estratégico para empresas y orientación profesional para talento digital.",
+    "blocks": {
+      "business": {
+        "title": "Formación y consultoría para empresas",
+        "subtitle": "Acompañamos decisiones, implementación y adopción tecnológica con criterio de negocio."
+      },
+      "talent": {
+        "title": "Amoxtli School para talento y futuros developers",
+        "subtitle": "Orientación vocacional, ruta de aprendizaje y visión de negocio para construir carrera."
+      }
+    },
     "cards": {
       "ai-foundations": {
         "title": "Criterio para integrar IA",
@@ -92,37 +102,67 @@
         "title": "Acompañamiento estratégico",
         "description": "Te damos claridad para decidir sin depender de proveedores técnicos.",
         "meta": "Criterio experto"
+      },
+      "vocational-guidance": {
+        "title": "Orientación vocacional y de carrera",
+        "description": "Clarificamos intereses, fortalezas y roles posibles en desarrollo, producto, PM y diseño.",
+        "meta": "Dirección clara"
+      },
+      "learning-path": {
+        "title": "Ruta académica o profesional",
+        "description": "Definimos un plan de aprendizaje realista con tiempos, objetivos y prioridades.",
+        "meta": "Plan estructurado"
+      },
+      "skills-stack": {
+        "title": "Herramientas y habilidades clave",
+        "description": "Seleccionamos stack, fundamentos y habilidades blandas para avanzar con intención.",
+        "meta": "Stack con criterio"
+      },
+      "product-vision": {
+        "title": "Visión de producto y negocio",
+        "description": "Conectamos lo técnico con mercado, usuarios y monetización del proyecto.",
+        "meta": "Impacto real"
+      },
+      "leadership": {
+        "title": "Gestión de equipos y proyectos",
+        "description": "Aprende a comunicar, liderar y vender ideas para ejecutar con claridad.",
+        "meta": "Liderazgo práctico"
+      },
+      "career-launch": {
+        "title": "Portafolio y empleabilidad",
+        "description": "Construye un portafolio sólido y prepara tu perfil para oportunidades reales.",
+        "meta": "Salida laboral"
       }
     }
   },
   "workflow": {
     "eyebrow": "Metodología",
-    "title": "Cómo trabajamos con tu equipo.",
-    "subtitle": "Un proceso claro para decidir, implementar y acompañar tecnología con sentido.",
+    "title": "Cómo trabajamos en ambos caminos.",
+    "subtitle": "Un proceso claro para empresas y talento: decidir, aprender y ejecutar con sentido.",
     "steps": [
       {
-        "title": "Diagnóstico operativo",
-        "description": "Entendemos procesos reales y dónde la tecnología puede ayudar."
+        "title": "Diagnóstico y contexto",
+        "description": "Entendemos el punto de partida: negocio, objetivos o perfil profesional."
       },
       {
-        "title": "Criterio y claridad",
-        "description": "Definimos qué sí tiene sentido implementar y qué no."
+        "title": "Criterio y dirección",
+        "description": "Definimos lo que sí tiene sentido: decisiones, rol o ruta."
       },
       {
         "title": "Plan de acción",
-        "description": "Priorizamos inversión, tiempos y pasos viables."
+        "description": "Priorizamos inversión, tiempos y pasos viables para ejecutar."
       },
       {
-        "title": "Implementación consciente",
-        "description": "Acompañamos la integración práctica de tecnología e IA."
+        "title": "Ejecución acompañada",
+        "description": "Implementamos o avanzamos la ruta con acompañamiento real."
       },
       {
-        "title": "Acompañamiento continuo",
-        "description": "Seguimiento experto para ajustar y decidir mejor."
+        "title": "Seguimiento continuo",
+        "description": "Ajustamos decisiones, objetivos y foco conforme avanzas."
       },
       {
         "title": "Resultados esperados",
-        "description": "Menos incertidumbre, mejor uso del presupuesto y procesos más eficientes."
+        "description": "Más claridad, avance medible y foco en impacto real."
       }
     ]
   },
@@ -130,95 +170,125 @@
     "eyebrow": "Resultados",
     "title": "Resultados esperados",
     "subtitle": "Lo que cambia cuando decides con criterio.",
-    "list": [
-      {
-        "title": "Menos incertidumbre tecnológica",
-        "description": "Decisiones claras antes de invertir.",
-        "metric": "Claridad real"
-      },
-      {
-        "title": "Mejor uso del presupuesto",
-        "description": "Inversión enfocada en lo que sí aporta.",
-        "metric": "Inversión consciente"
-      },
-      {
-        "title": "Procesos más eficientes",
-        "description": "Optimización real, sin automatizar lo incorrecto.",
-        "metric": "Impacto práctico"
-      },
-      {
-        "title": "Capacidad de decidir con criterio",
-        "description": "Menos dependencia de proveedores técnicos.",
-        "metric": "Autonomía"
-      }
-    ]
+    "business": {
+      "title": "Resultados para empresas",
+      "subtitle": "Decisiones tecnológicas con impacto operativo real.",
+      "list": [
+        {
+          "title": "Menos incertidumbre tecnológica",
+          "description": "Decisiones claras antes de invertir.",
+          "metric": "Claridad real"
+        },
+        {
+          "title": "Mejor uso del presupuesto",
+          "description": "Inversión enfocada en lo que sí aporta.",
+          "metric": "Inversión consciente"
+        },
+        {
+          "title": "Procesos más eficientes",
+          "description": "Optimización real, sin automatizar lo incorrecto.",
+          "metric": "Impacto práctico"
+        },
+        {
+          "title": "Capacidad de decidir con criterio",
+          "description": "Menos dependencia de proveedores técnicos.",
+          "metric": "Autonomía"
+        }
+      ]
+    },
+    "talent": {
+      "title": "Resultados para talento",
+      "subtitle": "Claridad para construir una ruta profesional sólida.",
+      "list": [
+        {
+          "title": "Dirección profesional clara",
+          "description": "Definición del rol y enfoque adecuado para tu perfil.",
+          "metric": "Ruta definida"
+        },
+        {
+          "title": "Plan de aprendizaje viable",
+          "description": "Prioridades concretas y tiempos realistas.",
+          "metric": "Plan accionable"
+        },
+        {
+          "title": "Stack con intención",
+          "description": "Herramientas alineadas a objetivos y empleabilidad.",
+          "metric": "Stack estratégico"
+        },
+        {
+          "title": "Visión de negocio aplicada",
+          "description": "Capacidad de monetizar ideas y comunicar valor.",
+          "metric": "Valor real"
+        }
+      ]
+    }
   },
   "testimonials": {
     "eyebrow": "Casos reales",
     "title": "Experiencias reales",
-    "subtitle": "Resultados de negocios que decidieron con claridad.",
+    "subtitle": "Experiencias de personas que definieron su ruta en tecnología.",
     "items": [
       {
-        "quote": "Definimos qué tecnología tenía sentido y evitamos invertir en herramientas innecesarias.",
-        "name": "Líder de Operaciones",
-        "role": "Retail regional"
+        "quote": "Definí mi rol en desarrollo web y armé un plan de estudio realista sin perder tiempo.",
+        "name": "Valeria",
+        "role": "Frontend Developer Jr."
       },
       {
-        "quote": "Tuvimos claridad para priorizar procesos y elegir la integración correcta.",
-        "name": "Head of Data",
-        "role": "Servicios financieros"
+        "quote": "Encontré el stack adecuado para mi perfil y logré presentar proyectos con enfoque de negocio.",
+        "name": "Carlos",
+        "role": "Full‑stack Developer"
       },
       {
-        "quote": "El acompañamiento nos dio criterio para decidir sin depender de proveedores.",
-        "name": "Directora de Innovación",
-        "role": "Sector salud"
+        "quote": "Conecté lo técnico con objetivos de producto y pude explicar mejor el valor de mi trabajo.",
+        "name": "Andrea",
+        "role": "Product‑minded Developer"
       },
       {
-        "quote": "Evitamos automatizar procesos incorrectos y enfocamos el esfuerzo donde sí impacta.",
-        "name": "Gerente de BI",
-        "role": "Manufactura"
+        "quote": "Pasé de aprender disperso a seguir una ruta clara para llegar a mi primer trabajo.",
+        "name": "Luis",
+        "role": "Career Switcher"
       },
       {
-        "quote": "Ahora tomamos decisiones tecnológicas con menos incertidumbre y más criterio.",
-        "name": "People & Culture Lead",
-        "role": "Servicios profesionales"
+        "quote": "Aprendí a vender mis ideas y plantearlas como un proyecto viable.",
+        "name": "María",
+        "role": "Developer & Maker"
       },
       {
-        "quote": "Definimos prioridades tecnológicas antes de comprometer presupuesto.",
-        "name": "Director General",
-        "role": "Servicios logísticos"
+        "quote": "Descubrí qué habilidades blandas necesitaba para liderar proyectos pequeños.",
+        "name": "Javier",
+        "role": "Tech Lead Jr."
       },
       {
-        "quote": "Identificamos qué procesos sí valía la pena optimizar y cuáles no.",
-        "name": "Gerente de Operaciones",
-        "role": "Retail especializado"
+        "quote": "Alineé mi portafolio con lo que realmente piden las vacantes.",
+        "name": "Sofía",
+        "role": "Web Developer"
       },
       {
-        "quote": "Ganamos claridad para integrar IA sin expectativas irreales.",
-        "name": "Líder de Transformación",
-        "role": "Servicios legales"
+        "quote": "Entendí la diferencia entre estudiar por moda y construir una carrera sólida.",
+        "name": "Diego",
+        "role": "Junior Developer"
       },
       {
-        "quote": "Tomamos decisiones con criterio y dejamos de depender de proveedores técnicos.",
-        "name": "Fundador",
-        "role": "Negocio en crecimiento"
+        "quote": "Definí un camino de aprendizaje que me permitió conseguir freelance rápido.",
+        "name": "Fer",
+        "role": "Freelance Developer"
       }
     ]
   },
   "finalCTA": {
     "eyebrow": "Contacto",
-    "title": "Toma decisiones tecnológicas con claridad.",
-    "subtitle": "Cuéntanos tu contexto y te acompañamos a decidir qué sí implementar.",
+    "title": "Hablemos de tu contexto.",
+    "subtitle": "Ya seas empresa o talento en formación, te ayudamos a definir el siguiente paso con claridad y enfoque.",
     "secondary": "Escribir por correo",
     "card": {
-      "title": "Respuesta rápida",
-      "description": "Agendamos una sesión breve para entender tu necesidad.",
+      "title": "Primera sesión",
+      "description": "Agendamos una conversación breve para entender tu punto de partida.",
       "responseTime": "Tiempo de respuesta: 24-48 hrs"
     }
   },
   "footer": {
-    "title": "Acompañamiento para decidir tecnología con criterio.",
-    "description": "Amoxtli School ayuda a negocios a tomar mejores decisiones tecnológicas.",
+    "title": "Mentoría tecnológica con visión de negocio y carrera.",
+    "description": "Amoxtli School acompaña a empresas y talento digital a tomar decisiones y construir rutas claras.",
     "navigation": "Navegación",
     "links": {
       "programs": "Programas",
